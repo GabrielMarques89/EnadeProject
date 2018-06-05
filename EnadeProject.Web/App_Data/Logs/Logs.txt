@@ -1187,3 +1187,1030 @@ DEBUG 2018-06-05 15:04:33,730 [18   ] Abp.BackgroundJobs.BackgroundJobManager  -
 DEBUG 2018-06-05 15:04:33,778 [18   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'EnadeProject.Interfaces.IService' with service name 'app/service'.
 WARN  2018-06-05 15:04:34,096 [21   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
 WARN  2018-06-05 15:04:34,151 [21   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+DEBUG 2018-06-05 15:06:09,530 [22   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 15:06:09,539 [22   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 15:06:09,541 [22   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 15:06:09,541 [22   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-06-05 15:14:35,342 [16   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 15:14:35,380 [16   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 15:14:35,392 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:14:35,397 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:14:35,398 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:14:35,398 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:14:35,398 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:14:35,399 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:14:35,399 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:14:35,399 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:14:35,399 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:14:35,400 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:14:35,400 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:14:35,406 [16   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 15:14:37,420 [16   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 15:14:37,420 [16   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2018-06-05 15:14:39,299 [16   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2018-06-05 15:14:39,345 [16   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-06-05 15:14:39,365 [16   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+FATAL 2018-06-05 15:14:39,374 [16   ] Abp.AbpBootstrapper                      - System.IO.DirectoryNotFoundException: Não foi possível localizar uma parte do caminho 'C:\EnadeProject\EnadeProject.Web\Localization\EnadeProject'.
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   em System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   em Abp.Localization.Dictionaries.Xml.XmlFileLocalizationDictionaryProvider.Initialize(String sourceName)
+   em Abp.Localization.LocalizationManager.InitializeSources()
+   em Abp.AbpKernelModule.PostInitialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.AbpBootstrapper.Initialize()
+System.IO.DirectoryNotFoundException: Não foi possível localizar uma parte do caminho 'C:\EnadeProject\EnadeProject.Web\Localization\EnadeProject'.
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   em System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   em Abp.Localization.Dictionaries.Xml.XmlFileLocalizationDictionaryProvider.Initialize(String sourceName)
+   em Abp.Localization.LocalizationManager.InitializeSources()
+   em Abp.AbpKernelModule.PostInitialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.AbpBootstrapper.Initialize()
+DEBUG 2018-06-05 15:14:49,395 [9    ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 15:14:49,403 [9    ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-06-05 15:16:37,686 [16   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 15:16:37,712 [16   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 15:16:37,721 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:16:37,725 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:16:37,726 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:16:37,726 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:16:37,726 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:16:37,726 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:16:37,727 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:16:37,727 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:16:37,727 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:16:37,727 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:16:37,728 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:16:37,733 [16   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 15:16:39,741 [16   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 15:16:39,741 [16   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2018-06-05 15:16:41,649 [16   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2018-06-05 15:16:41,686 [16   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-06-05 15:16:41,696 [16   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+FATAL 2018-06-05 15:16:41,703 [16   ] Abp.AbpBootstrapper                      - System.IO.DirectoryNotFoundException: Não foi possível localizar uma parte do caminho 'C:\EnadeProject\EnadeProject.Web\Localization\EnadeProject'.
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   em System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   em Abp.Localization.Dictionaries.Xml.XmlFileLocalizationDictionaryProvider.Initialize(String sourceName)
+   em Abp.Localization.LocalizationManager.InitializeSources()
+   em Abp.AbpKernelModule.PostInitialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.AbpBootstrapper.Initialize()
+System.IO.DirectoryNotFoundException: Não foi possível localizar uma parte do caminho 'C:\EnadeProject\EnadeProject.Web\Localization\EnadeProject'.
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   em System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   em Abp.Localization.Dictionaries.Xml.XmlFileLocalizationDictionaryProvider.Initialize(String sourceName)
+   em Abp.Localization.LocalizationManager.InitializeSources()
+   em Abp.AbpKernelModule.PostInitialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.AbpBootstrapper.Initialize()
+DEBUG 2018-06-05 15:16:51,722 [21   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 15:16:51,729 [21   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-06-05 15:53:47,959 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 15:53:47,985 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 15:53:47,994 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:53:47,998 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:53:47,998 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:53:47,999 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:53:47,999 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:53:47,999 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:53:47,999 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:53:48,000 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:53:48,000 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:53:48,000 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:53:48,000 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:53:48,006 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 15:53:51,702 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 15:53:51,703 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2018-06-05 15:53:54,301 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2018-06-05 15:53:54,425 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-06-05 15:53:54,440 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+FATAL 2018-06-05 15:53:54,454 [1    ] Abp.AbpBootstrapper                      - System.IO.DirectoryNotFoundException: Não foi possível localizar uma parte do caminho 'C:\EnadeProject\EnadeProject.Web\Localization\EnadeProject'.
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   em System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   em Abp.Localization.Dictionaries.Xml.XmlFileLocalizationDictionaryProvider.Initialize(String sourceName)
+   em Abp.Localization.LocalizationManager.InitializeSources()
+   em Abp.AbpKernelModule.PostInitialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.AbpBootstrapper.Initialize()
+System.IO.DirectoryNotFoundException: Não foi possível localizar uma parte do caminho 'C:\EnadeProject\EnadeProject.Web\Localization\EnadeProject'.
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   em System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   em Abp.Localization.Dictionaries.Xml.XmlFileLocalizationDictionaryProvider.Initialize(String sourceName)
+   em Abp.Localization.LocalizationManager.InitializeSources()
+   em Abp.AbpKernelModule.PostInitialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.AbpBootstrapper.Initialize()
+DEBUG 2018-06-05 15:54:04,561 [7    ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 15:54:04,570 [7    ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-06-05 16:00:23,036 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 16:00:23,064 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 16:00:23,074 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:00:23,078 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:00:23,078 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:00:23,079 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:00:23,079 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:00:23,079 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:00:23,079 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:00:23,080 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:00:23,080 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:00:23,080 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:00:23,080 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:00:23,085 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 16:00:25,047 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 16:00:25,047 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2018-06-05 16:00:26,906 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2018-06-05 16:00:26,934 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-06-05 16:00:26,943 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+FATAL 2018-06-05 16:00:26,951 [1    ] Abp.AbpBootstrapper                      - System.IO.DirectoryNotFoundException: Não foi possível localizar uma parte do caminho 'C:\EnadeProject\EnadeProject.Web\Localization\EnadeProject'.
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   em System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   em Abp.Localization.Dictionaries.Xml.XmlFileLocalizationDictionaryProvider.Initialize(String sourceName)
+   em Abp.Localization.LocalizationManager.InitializeSources()
+   em Abp.AbpKernelModule.PostInitialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.AbpBootstrapper.Initialize()
+System.IO.DirectoryNotFoundException: Não foi possível localizar uma parte do caminho 'C:\EnadeProject\EnadeProject.Web\Localization\EnadeProject'.
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   em System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   em Abp.Localization.Dictionaries.Xml.XmlFileLocalizationDictionaryProvider.Initialize(String sourceName)
+   em Abp.Localization.LocalizationManager.InitializeSources()
+   em Abp.AbpKernelModule.PostInitialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.AbpBootstrapper.Initialize()
+DEBUG 2018-06-05 16:00:36,974 [20   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 16:00:36,981 [20   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-06-05 16:03:54,294 [28   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 16:03:54,329 [28   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 16:03:54,342 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:03:54,347 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:03:54,348 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:03:54,348 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:03:54,348 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:03:54,348 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:03:54,349 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:03:54,349 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:03:54,349 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:03:54,350 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:03:54,350 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:03:54,355 [28   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 16:03:56,548 [28   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 16:03:56,548 [28   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2018-06-05 16:03:57,306 [28   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2018-06-05 16:03:57,338 [28   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-06-05 16:03:57,348 [28   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+FATAL 2018-06-05 16:03:57,352 [28   ] Abp.AbpBootstrapper                      - System.IO.DirectoryNotFoundException: Não foi possível localizar uma parte do caminho 'C:\EnadeProject\EnadeProject.Web\Localization\EnadeProject'.
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   em System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   em Abp.Localization.Dictionaries.Xml.XmlFileLocalizationDictionaryProvider.Initialize(String sourceName)
+   em Abp.Localization.LocalizationManager.InitializeSources()
+   em Abp.AbpKernelModule.PostInitialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.AbpBootstrapper.Initialize()
+System.IO.DirectoryNotFoundException: Não foi possível localizar uma parte do caminho 'C:\EnadeProject\EnadeProject.Web\Localization\EnadeProject'.
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   em System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   em Abp.Localization.Dictionaries.Xml.XmlFileLocalizationDictionaryProvider.Initialize(String sourceName)
+   em Abp.Localization.LocalizationManager.InitializeSources()
+   em Abp.AbpKernelModule.PostInitialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.AbpBootstrapper.Initialize()
+DEBUG 2018-06-05 16:04:07,379 [26   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 16:04:07,395 [26   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-06-05 16:04:58,660 [28   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 16:04:58,684 [28   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 16:04:58,694 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:04:58,698 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:04:58,699 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:04:58,699 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:04:58,699 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:04:58,700 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:04:58,700 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:04:58,700 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:04:58,700 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:04:58,700 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:04:58,701 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:04:58,706 [28   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 16:05:01,052 [28   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 16:05:01,052 [28   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2018-06-05 16:05:03,029 [28   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2018-06-05 16:05:03,126 [28   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-06-05 16:05:03,135 [28   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+FATAL 2018-06-05 16:05:03,142 [28   ] Abp.AbpBootstrapper                      - System.IO.DirectoryNotFoundException: Não foi possível localizar uma parte do caminho 'C:\EnadeProject\EnadeProject.Web\Localization\EnadeProject'.
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   em System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   em Abp.Localization.Dictionaries.Xml.XmlFileLocalizationDictionaryProvider.Initialize(String sourceName)
+   em Abp.Localization.LocalizationManager.InitializeSources()
+   em Abp.AbpKernelModule.PostInitialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.AbpBootstrapper.Initialize()
+System.IO.DirectoryNotFoundException: Não foi possível localizar uma parte do caminho 'C:\EnadeProject\EnadeProject.Web\Localization\EnadeProject'.
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   em System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   em Abp.Localization.Dictionaries.Xml.XmlFileLocalizationDictionaryProvider.Initialize(String sourceName)
+   em Abp.Localization.LocalizationManager.InitializeSources()
+   em Abp.AbpKernelModule.PostInitialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.AbpBootstrapper.Initialize()
+DEBUG 2018-06-05 16:05:13,163 [32   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 16:05:13,172 [32   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-06-05 16:08:54,403 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 16:08:54,442 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 16:08:54,454 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:08:54,460 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:08:54,461 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:08:54,461 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:08:54,461 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:08:54,462 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:08:54,462 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:08:54,462 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:08:54,462 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:08:54,463 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:08:54,463 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:08:54,470 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 16:08:56,345 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 16:08:56,346 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2018-06-05 16:08:58,153 [1    ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2018-06-05 16:08:58,182 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-06-05 16:08:58,193 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+FATAL 2018-06-05 16:08:58,198 [1    ] Abp.AbpBootstrapper                      - System.IO.DirectoryNotFoundException: Não foi possível localizar uma parte do caminho 'C:\EnadeProject\EnadeProject.Web\Localization\EnadeProject'.
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   em System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   em Abp.Localization.Dictionaries.Xml.XmlFileLocalizationDictionaryProvider.Initialize(String sourceName)
+   em Abp.Localization.LocalizationManager.InitializeSources()
+   em Abp.AbpKernelModule.PostInitialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.AbpBootstrapper.Initialize()
+System.IO.DirectoryNotFoundException: Não foi possível localizar uma parte do caminho 'C:\EnadeProject\EnadeProject.Web\Localization\EnadeProject'.
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   em System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   em Abp.Localization.Dictionaries.Xml.XmlFileLocalizationDictionaryProvider.Initialize(String sourceName)
+   em Abp.Localization.LocalizationManager.InitializeSources()
+   em Abp.AbpKernelModule.PostInitialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.AbpBootstrapper.Initialize()
+DEBUG 2018-06-05 16:09:08,208 [27   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 16:09:08,215 [27   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-06-05 16:10:16,014 [17   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 16:10:16,039 [17   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 16:10:16,049 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:10:16,054 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:10:16,054 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:10:16,054 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:10:16,055 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:10:16,055 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:10:16,055 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:10:16,056 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:10:16,056 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:10:16,056 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:10:16,056 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:10:16,061 [17   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 16:10:18,096 [17   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 16:10:18,096 [17   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2018-06-05 16:10:18,796 [17   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2018-06-05 16:10:18,823 [17   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-06-05 16:10:18,831 [17   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+FATAL 2018-06-05 16:10:18,835 [17   ] Abp.AbpBootstrapper                      - System.IO.DirectoryNotFoundException: Não foi possível localizar uma parte do caminho 'C:\EnadeProject\EnadeProject.Web\Localization\EnadeProject'.
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   em System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   em Abp.Localization.Dictionaries.Xml.XmlFileLocalizationDictionaryProvider.Initialize(String sourceName)
+   em Abp.Localization.LocalizationManager.InitializeSources()
+   em Abp.AbpKernelModule.PostInitialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.AbpBootstrapper.Initialize()
+System.IO.DirectoryNotFoundException: Não foi possível localizar uma parte do caminho 'C:\EnadeProject\EnadeProject.Web\Localization\EnadeProject'.
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   em System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   em Abp.Localization.Dictionaries.Xml.XmlFileLocalizationDictionaryProvider.Initialize(String sourceName)
+   em Abp.Localization.LocalizationManager.InitializeSources()
+   em Abp.AbpKernelModule.PostInitialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.AbpBootstrapper.Initialize()
+DEBUG 2018-06-05 16:10:59,217 [25   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 16:10:59,229 [25   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-06-05 16:12:49,164 [39   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 16:12:49,190 [39   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 16:12:49,199 [39   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:12:49,204 [39   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:12:49,204 [39   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:12:49,204 [39   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:12:49,204 [39   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:12:49,205 [39   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:12:49,205 [39   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:12:49,205 [39   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:12:49,205 [39   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:12:49,206 [39   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:12:49,206 [39   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:12:49,212 [39   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 16:12:51,387 [39   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 16:12:51,387 [39   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2018-06-05 16:12:53,556 [39   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2018-06-05 16:12:53,590 [39   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-06-05 16:12:53,603 [39   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+FATAL 2018-06-05 16:12:53,609 [39   ] Abp.AbpBootstrapper                      - System.IO.DirectoryNotFoundException: Não foi possível localizar uma parte do caminho 'C:\EnadeProject\EnadeProject.Web\Localization\EnadeProject'.
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   em System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   em Abp.Localization.Dictionaries.Xml.XmlFileLocalizationDictionaryProvider.Initialize(String sourceName)
+   em Abp.Localization.LocalizationManager.InitializeSources()
+   em Abp.AbpKernelModule.PostInitialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.AbpBootstrapper.Initialize()
+System.IO.DirectoryNotFoundException: Não foi possível localizar uma parte do caminho 'C:\EnadeProject\EnadeProject.Web\Localization\EnadeProject'.
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   em System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   em Abp.Localization.Dictionaries.Xml.XmlFileLocalizationDictionaryProvider.Initialize(String sourceName)
+   em Abp.Localization.LocalizationManager.InitializeSources()
+   em Abp.AbpKernelModule.PostInitialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.AbpBootstrapper.Initialize()
+DEBUG 2018-06-05 16:13:03,621 [25   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 16:13:03,630 [25   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-06-05 16:16:15,867 [17   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 16:16:15,893 [17   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 16:16:15,903 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:16:15,907 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:16:15,908 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:16:15,908 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:16:15,908 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:16:15,908 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:16:15,909 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:16:15,909 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:16:15,909 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:16:15,909 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:16:15,910 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:16:15,915 [17   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 16:17:22,019 [17   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 16:17:22,019 [17   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2018-06-05 16:17:22,869 [17   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2018-06-05 16:17:22,924 [17   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-06-05 16:17:22,940 [17   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+FATAL 2018-06-05 16:17:22,943 [17   ] Abp.AbpBootstrapper                      - System.IO.DirectoryNotFoundException: Não foi possível localizar uma parte do caminho 'C:\EnadeProject\EnadeProject.Web\Localization\EnadeProject'.
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   em System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   em Abp.Localization.Dictionaries.Xml.XmlFileLocalizationDictionaryProvider.Initialize(String sourceName)
+   em Abp.Localization.LocalizationManager.InitializeSources()
+   em Abp.AbpKernelModule.PostInitialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.AbpBootstrapper.Initialize()
+System.IO.DirectoryNotFoundException: Não foi possível localizar uma parte do caminho 'C:\EnadeProject\EnadeProject.Web\Localization\EnadeProject'.
+   em System.IO.__Error.WinIOError(Int32 errorCode, String maybeFullPath)
+   em System.IO.FileSystemEnumerableIterator`1.CommonInit()
+   em System.IO.Directory.GetFiles(String path, String searchPattern, SearchOption searchOption)
+   em Abp.Localization.Dictionaries.Xml.XmlFileLocalizationDictionaryProvider.Initialize(String sourceName)
+   em Abp.Localization.LocalizationManager.InitializeSources()
+   em Abp.AbpKernelModule.PostInitialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.AbpBootstrapper.Initialize()
+DEBUG 2018-06-05 16:17:32,954 [46   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 16:17:32,968 [46   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-06-05 16:17:42,509 [17   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 16:17:42,537 [17   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 16:17:42,547 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:17:42,552 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:17:42,553 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:17:42,553 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:17:42,553 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:17:42,553 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:17:42,554 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:17:42,554 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:17:42,555 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:17:42,555 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:17:42,555 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:17:42,561 [17   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 16:17:44,538 [17   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 16:17:44,538 [17   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2018-06-05 16:17:46,453 [17   ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2018-06-05 16:17:46,750 [17   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 16:17:46,799 [17   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'EnadeProject.Interfaces.IService' with service name 'app/service'.
+DEBUG 2018-06-05 16:21:10,409 [18   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 16:21:10,423 [18   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 16:21:10,426 [18   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 16:21:10,426 [18   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-06-05 16:21:15,935 [17   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 16:21:15,960 [17   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 16:21:15,969 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:21:15,973 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:21:15,974 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:21:15,974 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:21:15,974 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:21:15,974 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:21:15,975 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:21:15,975 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:21:15,975 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:21:15,975 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:21:15,975 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:21:15,980 [17   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 16:21:18,371 [17   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 16:21:18,372 [17   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2018-06-05 16:21:20,628 [17   ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2018-06-05 16:21:20,910 [17   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 16:26:11,164 [22   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 16:26:11,179 [22   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 16:26:11,182 [22   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 16:26:11,182 [22   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-06-05 16:26:18,629 [17   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 16:26:18,658 [17   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 16:26:18,669 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:26:18,674 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:26:18,674 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:26:18,674 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:26:18,675 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:26:18,675 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:26:18,676 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:26:18,676 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:26:18,676 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:26:18,677 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:26:18,677 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:26:18,683 [17   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 16:26:20,545 [17   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 16:26:20,545 [17   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2018-06-05 16:26:22,474 [17   ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2018-06-05 16:26:22,790 [17   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 16:27:24,256 [19   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 16:27:24,266 [19   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 16:27:24,269 [19   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 16:27:24,270 [19   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-06-05 16:27:32,846 [39   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 16:27:32,872 [39   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 16:27:32,882 [39   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:27:32,887 [39   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:27:32,887 [39   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:27:32,887 [39   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:27:32,887 [39   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:27:32,888 [39   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:27:32,888 [39   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:27:32,888 [39   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:27:32,888 [39   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:27:32,889 [39   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:27:32,889 [39   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:27:32,894 [39   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 16:27:34,859 [39   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 16:27:34,859 [39   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2018-06-05 16:27:36,703 [39   ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2018-06-05 16:27:36,968 [39   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 16:28:10,129 [38   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 16:28:10,142 [38   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 16:28:10,145 [38   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 16:28:10,145 [38   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-06-05 16:29:28,768 [28   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 16:29:28,793 [28   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 16:29:28,803 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:29:28,807 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:29:28,807 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:29:28,807 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:29:28,807 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:29:28,808 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:29:28,808 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:29:28,808 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:29:28,808 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:29:28,809 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:29:28,809 [28   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:29:28,814 [28   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 16:29:30,608 [28   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 16:29:30,609 [28   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2018-06-05 16:29:32,927 [28   ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2018-06-05 16:29:33,295 [28   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 16:35:31,859 [27   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 16:35:31,875 [27   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 16:35:31,878 [27   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 16:35:31,878 [27   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-06-05 16:38:25,643 [17   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 16:38:25,668 [17   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 16:38:25,677 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:38:25,681 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:38:25,681 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:38:25,681 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:38:25,681 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:38:25,682 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:38:25,682 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:38:25,682 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:38:25,682 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:38:25,683 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:38:25,683 [17   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 16:38:25,688 [17   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 16:38:27,018 [17   ] NHibernate.Tool.hbm2ddl.SchemaUpdate     - could not get database metadata
+System.ArgumentException: Value 'Preferred' is not of the correct type.
+   em MySql.Data.MySqlClient.MySqlConnectionStringOption.ValidateValue(Object& value)
+   em MySql.Data.MySqlClient.MySqlConnectionStringOption.<>c.<.ctor>b__4_0(MySqlConnectionStringBuilder msb, MySqlConnectionStringOption sender, Object value)
+   em System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   em MySql.Data.MySqlClient.MySqlConnectionStringBuilder..ctor(String connStr)
+   em MySql.Data.MySqlClient.MySqlConnection.set_ConnectionString(String value)
+   em NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   em NHibernate.Tool.hbm2ddl.ManagedProviderConnectionHelper.Prepare()
+   em NHibernate.Tool.hbm2ddl.SchemaUpdate.Execute(Action`1 scriptAction, Boolean doUpdate)
+ERROR 2018-06-05 16:38:27,022 [17   ] NHibernate.Tool.hbm2ddl.SchemaUpdate     - could not complete schema update
+System.ArgumentException: Value 'Preferred' is not of the correct type.
+   em MySql.Data.MySqlClient.MySqlConnectionStringOption.ValidateValue(Object& value)
+   em MySql.Data.MySqlClient.MySqlConnectionStringOption.<>c.<.ctor>b__4_0(MySqlConnectionStringBuilder msb, MySqlConnectionStringOption sender, Object value)
+   em System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   em MySql.Data.MySqlClient.MySqlConnectionStringBuilder..ctor(String connStr)
+   em MySql.Data.MySqlClient.MySqlConnection.set_ConnectionString(String value)
+   em NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   em NHibernate.Tool.hbm2ddl.ManagedProviderConnectionHelper.Prepare()
+   em NHibernate.Tool.hbm2ddl.SchemaUpdate.Execute(Action`1 scriptAction, Boolean doUpdate)
+ERROR 2018-06-05 16:38:27,067 [17   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 16:38:27,067 [17   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+FATAL 2018-06-05 16:38:27,267 [17   ] Abp.AbpBootstrapper                      - FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> System.ArgumentException: Value 'Preferred' is not of the correct type.
+   em MySql.Data.MySqlClient.MySqlConnectionStringOption.ValidateValue(Object& value)
+   em MySql.Data.MySqlClient.MySqlConnectionStringOption.<>c.<.ctor>b__4_0(MySqlConnectionStringBuilder msb, MySqlConnectionStringOption sender, Object value)
+   em System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   em MySql.Data.MySqlClient.MySqlConnectionStringBuilder..ctor(String connStr)
+   em MySql.Data.MySqlClient.MySqlConnection.set_ConnectionString(String value)
+   em NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   em NHibernate.Tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.Prepare()
+   em NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.GetReservedWords(Dialect dialect, IConnectionHelper connectionHelper)
+   em NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.Update(ISessionFactoryImplementor sessionFactory)
+   em NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   em NHibernate.Cfg.Configuration.BuildSessionFactory()
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   em Abp.NHibernate.AbpNHibernateModule.Initialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.Modules.AbpModuleManager.StartModules()
+   em Abp.AbpBootstrapper.Initialize()
+
+
+FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> System.ArgumentException: Value 'Preferred' is not of the correct type.
+   em MySql.Data.MySqlClient.MySqlConnectionStringOption.ValidateValue(Object& value)
+   em MySql.Data.MySqlClient.MySqlConnectionStringOption.<>c.<.ctor>b__4_0(MySqlConnectionStringBuilder msb, MySqlConnectionStringOption sender, Object value)
+   em System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   em MySql.Data.MySqlClient.MySqlConnectionStringBuilder..ctor(String connStr)
+   em MySql.Data.MySqlClient.MySqlConnection.set_ConnectionString(String value)
+   em NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   em NHibernate.Tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.Prepare()
+   em NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.GetReservedWords(Dialect dialect, IConnectionHelper connectionHelper)
+   em NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.Update(ISessionFactoryImplementor sessionFactory)
+   em NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   em NHibernate.Cfg.Configuration.BuildSessionFactory()
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   em Abp.NHibernate.AbpNHibernateModule.Initialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.Modules.AbpModuleManager.StartModules()
+   em Abp.AbpBootstrapper.Initialize()
+
+
+DEBUG 2018-06-05 16:38:37,288 [25   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 17:00:16,239 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 17:00:16,278 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 17:00:16,291 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:00:16,296 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:00:16,296 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:00:16,297 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:00:16,298 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:00:16,298 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:00:16,299 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:00:16,299 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:00:16,299 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:00:16,300 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:00:16,300 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:00:16,307 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 17:00:20,532 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 17:00:20,532 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2018-06-05 17:00:23,637 [1    ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2018-06-05 17:00:23,933 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:03:48,009 [5    ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 17:03:48,032 [5    ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:03:48,036 [5    ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:03:48,036 [5    ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-06-05 17:04:19,255 [18   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 17:04:19,282 [18   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 17:04:19,291 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:04:19,295 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:04:19,295 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:04:19,296 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:04:19,296 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:04:19,296 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:04:19,297 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:04:19,297 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:04:19,297 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:04:19,297 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:04:19,298 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:04:19,303 [18   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 17:04:21,508 [18   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 17:04:21,508 [18   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2018-06-05 17:04:23,801 [18   ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2018-06-05 17:04:24,171 [18   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:06:16,531 [9    ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 17:06:16,549 [9    ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:06:16,552 [9    ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:06:16,552 [9    ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-06-05 17:06:45,948 [30   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 17:06:45,974 [30   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 17:06:45,983 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:06:45,987 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:06:45,988 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:06:45,988 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:06:45,989 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:06:45,989 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:06:45,989 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:06:45,989 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:06:45,989 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:06:45,990 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:06:45,990 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:06:45,995 [30   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 17:06:48,489 [30   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 17:06:48,489 [30   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2018-06-05 17:06:50,613 [30   ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2018-06-05 17:06:50,961 [30   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:08:06,032 [44   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 17:08:06,047 [44   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:08:06,051 [44   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:08:06,052 [44   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-06-05 17:08:36,100 [47   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 17:08:36,126 [47   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 17:08:36,135 [47   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:08:36,139 [47   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:08:36,139 [47   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:08:36,140 [47   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:08:36,140 [47   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:08:36,140 [47   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:08:36,140 [47   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:08:36,141 [47   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:08:36,141 [47   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:08:36,141 [47   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:08:36,141 [47   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:08:36,147 [47   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 17:08:38,314 [47   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 17:08:38,315 [47   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2018-06-05 17:08:40,185 [47   ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2018-06-05 17:08:40,479 [47   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:10:44,769 [53   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 17:10:44,783 [53   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:10:44,785 [53   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:10:44,785 [53   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-06-05 17:11:58,341 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 17:11:58,379 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 17:11:58,389 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:11:58,396 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:11:58,397 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:11:58,397 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:11:58,397 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:11:58,398 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:11:58,398 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:11:58,398 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:11:58,399 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:11:58,399 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:11:58,399 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:11:58,406 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 17:12:00,451 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 17:12:00,451 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2018-06-05 17:12:02,134 [1    ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2018-06-05 17:12:02,372 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:14:00,966 [57   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 17:14:00,978 [57   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:14:00,979 [57   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:14:00,979 [57   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-06-05 17:18:43,601 [49   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 17:18:43,637 [49   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 17:18:43,647 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:18:43,652 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:18:43,652 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:18:43,652 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:18:43,652 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:18:43,653 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:18:43,653 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:18:43,653 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:18:43,653 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:18:43,654 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:18:43,654 [49   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:18:43,660 [49   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 17:18:45,785 [49   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 17:18:45,785 [49   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2018-06-05 17:18:48,149 [49   ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2018-06-05 17:18:48,544 [49   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:18:48,598 [49   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'EnadeProject.Interfaces.IService' with service name 'app/service'.
+DEBUG 2018-06-05 17:22:11,323 [35   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 17:22:11,330 [35   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:22:11,332 [35   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:22:11,332 [35   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-06-05 17:22:24,612 [30   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 17:22:24,640 [30   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 17:22:24,649 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:22:24,654 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:22:24,655 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:22:24,655 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:22:24,655 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:22:24,656 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:22:24,656 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:22:24,656 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:22:24,657 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:22:24,657 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:22:24,657 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:22:24,662 [30   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 17:22:26,986 [30   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 17:22:26,986 [30   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2018-06-05 17:22:28,823 [30   ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2018-06-05 17:22:29,078 [30   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:22:29,131 [30   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'EnadeProject.Interfaces.IService' with service name 'app/service'.
+DEBUG 2018-06-05 17:23:46,196 [28   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 17:23:46,209 [28   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:23:46,211 [28   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:23:46,211 [28   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-06-05 17:24:02,616 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 17:24:02,646 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 17:24:02,657 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:24:02,662 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:24:02,662 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:24:02,662 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:24:02,662 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:24:02,663 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:24:02,663 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:24:02,663 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:24:02,663 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:24:02,664 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:24:02,664 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:24:02,669 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 17:24:04,885 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 17:24:04,885 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2018-06-05 17:24:07,151 [1    ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2018-06-05 17:24:07,484 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:24:07,569 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'EnadeProject.Interfaces.IService' with service name 'app/service'.
+DEBUG 2018-06-05 17:25:41,276 [16   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 17:25:41,288 [16   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:25:41,291 [16   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:25:41,291 [16   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-06-05 17:25:58,225 [18   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 17:25:58,250 [18   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 17:25:58,260 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:25:58,266 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:25:58,266 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:25:58,266 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:25:58,266 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:25:58,266 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:25:58,267 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:25:58,267 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:25:58,267 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:25:58,267 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:25:58,268 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:25:58,272 [18   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 17:26:00,390 [18   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 17:26:00,391 [18   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2018-06-05 17:26:02,348 [18   ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2018-06-05 17:26:02,619 [18   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:26:02,674 [18   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'EnadeProject.Interfaces.IService' with service name 'app/service'.
+WARN  2018-06-05 17:26:14,344 [16   ] rity.AntiForgery.AbpAntiForgeryApiFilter - Empty or invalid anti forgery header token.
+WARN  2018-06-05 17:26:14,344 [16   ] rity.AntiForgery.AbpAntiForgeryApiFilter - Requested URI: http://localhost/EnadeProject.Web/api/Teste
+WARN  2018-06-05 17:26:40,875 [16   ] rity.AntiForgery.AbpAntiForgeryApiFilter - Empty or invalid anti forgery header token.
+WARN  2018-06-05 17:26:40,875 [16   ] rity.AntiForgery.AbpAntiForgeryApiFilter - Requested URI: http://localhost/EnadeProject.Web/api/Teste
+WARN  2018-06-05 17:26:57,582 [16   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2018-06-05 17:26:57,635 [16   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+DEBUG 2018-06-05 17:28:24,790 [10   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 17:28:24,803 [10   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:28:24,806 [10   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:28:24,806 [10   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-06-05 17:28:41,200 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 17:28:41,226 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 17:28:41,234 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:28:41,239 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:28:41,239 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:28:41,239 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:28:41,239 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:28:41,240 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:28:41,240 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:28:41,240 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:28:41,240 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:28:41,241 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:28:41,241 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:28:41,246 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 17:28:43,438 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 17:28:43,438 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2018-06-05 17:28:45,182 [1    ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2018-06-05 17:28:45,434 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:28:45,484 [1    ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'EnadeProject.Interfaces.IService' with service name 'app/service'.
+WARN  2018-06-05 17:29:11,434 [20   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2018-06-05 17:29:11,484 [20   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+DEBUG 2018-06-05 17:36:22,491 [32   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 17:36:22,506 [32   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:36:22,508 [32   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:36:22,509 [32   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-06-05 17:36:32,588 [44   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 17:36:32,613 [44   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 17:36:32,623 [44   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:36:32,628 [44   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:36:32,628 [44   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:36:32,629 [44   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:36:32,629 [44   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:36:32,629 [44   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:36:32,629 [44   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:36:32,630 [44   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:36:32,630 [44   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:36:32,630 [44   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:36:32,630 [44   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:36:32,637 [44   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 17:36:34,499 [44   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 17:36:34,500 [44   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2018-06-05 17:36:35,346 [44   ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2018-06-05 17:36:35,619 [44   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:36:35,669 [44   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'EnadeProject.Interfaces.IService' with service name 'app/service'.
+WARN  2018-06-05 17:36:44,271 [41   ] rity.AntiForgery.AbpAntiForgeryApiFilter - Empty or invalid anti forgery header token.
+WARN  2018-06-05 17:36:44,272 [41   ] rity.AntiForgery.AbpAntiForgeryApiFilter - Requested URI: http://localhost/EnadeProject.Web/action1
+WARN  2018-06-05 17:36:51,372 [15   ] rity.AntiForgery.AbpAntiForgeryApiFilter - Empty or invalid anti forgery header token.
+WARN  2018-06-05 17:36:51,372 [15   ] rity.AntiForgery.AbpAntiForgeryApiFilter - Requested URI: http://localhost/EnadeProject.Web/action2
+WARN  2018-06-05 17:38:20,637 [42   ] rity.AntiForgery.AbpAntiForgeryApiFilter - Empty or invalid anti forgery header token.
+WARN  2018-06-05 17:38:20,637 [42   ] rity.AntiForgery.AbpAntiForgeryApiFilter - Requested URI: http://localhost/EnadeProject.Web/api/services/app/service/EntityValidation
+DEBUG 2018-06-05 17:43:41,144 [64   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 17:43:41,154 [64   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:43:41,156 [64   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:43:41,156 [64   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-06-05 17:43:55,725 [30   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 17:43:55,757 [30   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 17:43:55,772 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:43:55,778 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:43:55,778 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:43:55,778 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:43:55,779 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:43:55,779 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:43:55,779 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:43:55,780 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:43:55,780 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:43:55,780 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:43:55,781 [30   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:43:55,788 [30   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 17:43:57,941 [30   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 17:43:57,942 [30   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2018-06-05 17:43:58,827 [30   ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2018-06-05 17:43:59,122 [30   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:43:59,184 [30   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'EnadeProject.Interfaces.IService' with service name 'app/service'.
+WARN  2018-06-05 17:44:07,213 [50   ] rity.AntiForgery.AbpAntiForgeryApiFilter - Empty or invalid anti forgery header token.
+WARN  2018-06-05 17:44:07,213 [50   ] rity.AntiForgery.AbpAntiForgeryApiFilter - Requested URI: http://localhost/EnadeProject.Web/action1
+WARN  2018-06-05 17:44:16,223 [81   ] rity.AntiForgery.AbpAntiForgeryApiFilter - Empty or invalid anti forgery header token.
+WARN  2018-06-05 17:44:16,223 [81   ] rity.AntiForgery.AbpAntiForgeryApiFilter - Requested URI: http://localhost/EnadeProject.Web/action2
+WARN  2018-06-05 17:44:34,988 [73   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2018-06-05 17:44:35,041 [73   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+DEBUG 2018-06-05 17:45:13,599 [81   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 17:45:13,613 [81   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:45:13,615 [81   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:45:13,615 [81   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-06-05 17:45:25,757 [18   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 17:45:25,784 [18   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 17:45:25,793 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:45:25,797 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:45:25,798 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:45:25,798 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:45:25,798 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:45:25,799 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:45:25,799 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:45:25,799 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:45:25,799 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:45:25,800 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:45:25,801 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:45:25,806 [18   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 17:45:27,727 [18   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 17:45:27,727 [18   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2018-06-05 17:45:28,610 [18   ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2018-06-05 17:45:28,884 [18   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:45:28,936 [18   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'EnadeProject.Interfaces.IService' with service name 'app/service'.
+WARN  2018-06-05 17:45:29,104 [78   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2018-06-05 17:45:29,160 [78   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2018-06-05 17:47:01,150 [81   ] rity.AntiForgery.AbpAntiForgeryApiFilter - Empty or invalid anti forgery header token.
+WARN  2018-06-05 17:47:01,150 [81   ] rity.AntiForgery.AbpAntiForgeryApiFilter - Requested URI: http://localhost/EnadeProject.Web/action1
+DEBUG 2018-06-05 17:47:40,949 [75   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 17:47:40,964 [75   ] Abp.BackgroundJobs.BackgroundJobManager  - Stop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:47:40,967 [75   ] Abp.BackgroundJobs.BackgroundJobManager  - WaitToStop background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:47:40,967 [75   ] Abp.Modules.AbpModuleManager             - Shutting down completed.
+DEBUG 2018-06-05 17:48:09,277 [47   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 17:48:09,303 [47   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 17:48:09,311 [47   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:48:09,316 [47   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:48:09,317 [47   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:48:09,317 [47   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:48:09,317 [47   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:48:09,317 [47   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:48:09,318 [47   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:48:09,318 [47   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:48:09,318 [47   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:48:09,318 [47   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:48:09,319 [47   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 17:48:09,323 [47   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 17:48:11,106 [47   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 17:48:11,106 [47   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2018-06-05 17:48:11,833 [47   ] Abp.Localization.LocalizationManager     - Localization disabled.
+DEBUG 2018-06-05 17:48:12,072 [47   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 17:48:12,117 [47   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'EnadeProject.Interfaces.IService' with service name 'app/service'.
+WARN  2018-06-05 17:48:18,633 [70   ] rity.AntiForgery.AbpAntiForgeryApiFilter - Empty or invalid anti forgery header token.
+WARN  2018-06-05 17:48:18,634 [70   ] rity.AntiForgery.AbpAntiForgeryApiFilter - Requested URI: http://localhost/EnadeProject.Web/banana/action1
+WARN  2018-06-05 17:48:27,030 [64   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2018-06-05 17:48:27,084 [64   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+ERROR 2018-06-05 17:48:30,371 [70   ] nHandling.AbpApiExceptionFilterAttribute - O método ou a operação não está implementada.
+System.NotImplementedException: O método ou a operação não está implementada.
+   em EnadeProject.Controllers.TesteController.Action22() na C:\EnadeProject\EnadeProject.WebApi\Controllers\TesteController.cs:linha 21
+   em lambda_method(Closure , Object , Object[] )
+   em System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ActionExecutor.<>c__DisplayClass6_1.<GetExecutor>b__3(Object instance, Object[] methodParameters)
+   em System.Web.Http.Controllers.ReflectedHttpActionDescriptor.ExecuteAsync(HttpControllerContext controllerContext, IDictionary`2 arguments, CancellationToken cancellationToken)
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Web.Http.Controllers.ApiControllerActionInvoker.<InvokeActionAsyncCore>d__1.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.WebApi.Uow.AbpApiUowFilter.<ExecuteActionFilterAsync>d__6.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.WebApi.Validation.AbpApiValidationFilter.<ExecuteActionFilterAsync>d__5.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.WebApi.Auditing.AbpApiAuditFilter.<ExecuteActionFilterAsync>d__4.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.WebApi.Security.AntiForgery.AbpAntiForgeryApiFilter.<ExecuteAuthorizationFilterAsync>d__10.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em Abp.WebApi.Authorization.AbpApiAuthorizeFilter.<ExecuteAuthorizationFilterAsync>d__7.MoveNext()
+--- Fim do rastreamento de pilha do local anterior onde a exceção foi gerada ---
+   em System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   em System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   em System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()

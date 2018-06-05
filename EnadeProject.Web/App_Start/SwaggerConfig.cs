@@ -1,4 +1,6 @@
+using System.Linq;
 using System.Web.Http;
+using System.Web.Http.Description;
 using WebActivatorEx;
 using EnadeProject.Web;
 using Swashbuckle.Application;
@@ -16,24 +18,9 @@ namespace EnadeProject.Web
             GlobalConfiguration.Configuration
                 .EnableSwagger(c =>
                     {
-                        // By default, the service root url is inferred from the request used to access the docs.
-                        // However, there may be situations (e.g. proxy and load-balanced environments) where this does not
-                        // resolve correctly. You can workaround this by providing your own code to determine the root URL.
-                        //
-                        //c.RootUrl(req => GetRootUrlFromAppConfig());
-
-                        // If schemes are not explicitly provided in a Swagger 2.0 document, then the scheme used to access
-                        // the docs is taken as the default. If your API supports multiple schemes and you want to be explicit
-                        // about them, you can use the "Schemes" option as shown below.
-                        //
-                        //c.Schemes(new[] { "http", "https" });
-
-                        // Use "SingleApiVersion" to describe a single version API. Swagger 2.0 includes an "Info" object to
-                        // hold additional metadata for an API. Version and title are required but you can also provide
-                        // additional fields by chaining methods off SingleApiVersion.
-                        //
+                        
                         c.SingleApiVersion("v1", "EnadeProject.Web");
-
+                        c.ResolveConflictingActions(enumerable => enumerable.First() );
                         // If you want the output Swagger docs to be indented properly, enable the "PrettyPrint" option.
                         //
                         //c.PrettyPrint();
@@ -61,7 +48,7 @@ namespace EnadeProject.Web
                         //c.BasicAuth("basic")
                         //    .Description("Basic HTTP Authentication");
                         //
-						// NOTE: You must also configure 'EnableApiKeySupport' below in the SwaggerUI section
+                        // NOTE: You must also configure 'EnableApiKeySupport' below in the SwaggerUI section
                         //c.ApiKey("apiKey")
                         //    .Description("API Key Authentication")
                         //    .Name("apiKey")

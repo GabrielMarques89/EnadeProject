@@ -212,6 +212,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\BaseRestController.cs" />
+    <Compile Include="Controllers\TesteController.cs" />
     <Compile Include="EnadeProjectWebApiModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

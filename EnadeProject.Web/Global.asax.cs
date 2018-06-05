@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Web.Http;
 using Abp.Castle.Logging.Log4Net;
 using Abp.Web;
 using Castle.Facilities.Logging;
@@ -13,6 +14,7 @@ namespace EnadeProject.Web
                 f => f.UseAbpLog4Net().WithConfig(Server.MapPath("log4net.config"))
             );
 
+            GlobalConfiguration.Configure(WebApiConfig.Register);
             base.Application_Start(sender, e);
         }
     }
