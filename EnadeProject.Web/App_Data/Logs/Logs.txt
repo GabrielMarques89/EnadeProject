@@ -1,0 +1,1189 @@
+DEBUG 2018-06-05 14:55:13,336 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 14:55:13,373 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 14:55:13,384 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:55:13,392 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:55:13,392 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:55:13,393 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:55:13,393 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:55:13,394 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:55:13,394 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:55:13,395 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:55:13,395 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:55:13,395 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:55:13,395 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:55:13,403 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 14:55:15,905 [1    ] NHibernate.Util.ReflectHelper            - Could not load type MySql.Data.MySqlClient.MySqlConnection, MySql.Data.
+System.IO.FileNotFoundException: Não foi possível carregar arquivo ou assembly 'MySql.Data' ou uma de suas dependências. O sistema não pode encontrar o arquivo especificado.
+Nome do arquivo: 'MySql.Data'
+   em System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   em System.Reflection.Assembly.Load(String assemblyString)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+AVI: o log de associações de assembly está desativado.
+Para ativar o log de  falhas de assembly, defina o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Observação: há alguma penalidade para o desempenho associada ao log de falha de associação de assembly.
+Para desativar esse recurso, remova o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+ERROR 2018-06-05 14:55:15,917 [1    ] NHibernate.Util.ReflectHelper            - Could not load type MySql.Data.MySqlClient.MySqlCommand, MySql.Data.
+System.IO.FileNotFoundException: Não foi possível carregar arquivo ou assembly 'MySql.Data' ou uma de suas dependências. O sistema não pode encontrar o arquivo especificado.
+Nome do arquivo: 'MySql.Data'
+   em System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   em System.Reflection.Assembly.Load(String assemblyString)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+AVI: o log de associações de assembly está desativado.
+Para ativar o log de  falhas de assembly, defina o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Observação: há alguma penalidade para o desempenho associada ao log de falha de associação de assembly.
+Para desativar esse recurso, remova o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+ERROR 2018-06-05 14:55:16,171 [1    ] NHibernate.Tool.hbm2ddl.SchemaUpdate     - could not get database metadata
+NHibernate.HibernateException: Could not create the driver from NHibernate.Driver.MySqlDataDriver, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4. ---> System.Reflection.TargetInvocationException: Uma exceção foi acionada pelo destino de uma chamada. ---> System.ArgumentException: Não foi possível localizar o Provedor de Dados .Net Framework solicitado. Talvez ele não esteja instalado.
+   em System.Data.Common.DbProviderFactories.GetFactory(String providerInvariantName)
+   em NHibernate.Driver.ReflectionBasedDriver..ctor(String providerInvariantName, String driverAssemblyName, String connectionTypeName, String commandTypeName)
+   em NHibernate.Driver.MySqlDataDriver..ctor()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   em System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   em System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   em System.Activator.CreateInstance(Type type)
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProvider.Configure(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProviderFactory.NewConnectionProvider(IDictionary`2 settings)
+   em NHibernate.Tool.hbm2ddl.ManagedProviderConnectionHelper.Prepare()
+   em NHibernate.Tool.hbm2ddl.SchemaUpdate.Execute(Action`1 scriptAction, Boolean doUpdate)
+ERROR 2018-06-05 14:55:16,177 [1    ] NHibernate.Tool.hbm2ddl.SchemaUpdate     - could not complete schema update
+NHibernate.HibernateException: Could not create the driver from NHibernate.Driver.MySqlDataDriver, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4. ---> System.Reflection.TargetInvocationException: Uma exceção foi acionada pelo destino de uma chamada. ---> System.ArgumentException: Não foi possível localizar o Provedor de Dados .Net Framework solicitado. Talvez ele não esteja instalado.
+   em System.Data.Common.DbProviderFactories.GetFactory(String providerInvariantName)
+   em NHibernate.Driver.ReflectionBasedDriver..ctor(String providerInvariantName, String driverAssemblyName, String connectionTypeName, String commandTypeName)
+   em NHibernate.Driver.MySqlDataDriver..ctor()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   em System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   em System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   em System.Activator.CreateInstance(Type type)
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProvider.Configure(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProviderFactory.NewConnectionProvider(IDictionary`2 settings)
+   em NHibernate.Tool.hbm2ddl.ManagedProviderConnectionHelper.Prepare()
+   em NHibernate.Tool.hbm2ddl.SchemaUpdate.Execute(Action`1 scriptAction, Boolean doUpdate)
+ERROR 2018-06-05 14:55:16,226 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 14:55:16,226 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 14:55:16,407 [1    ] NHibernate.Util.ReflectHelper            - Could not load type MySql.Data.MySqlClient.MySqlConnection, MySql.Data.
+System.IO.FileNotFoundException: Não foi possível carregar arquivo ou assembly 'MySql.Data' ou uma de suas dependências. O sistema não pode encontrar o arquivo especificado.
+Nome do arquivo: 'MySql.Data'
+   em System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   em System.Reflection.Assembly.Load(String assemblyString)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+AVI: o log de associações de assembly está desativado.
+Para ativar o log de  falhas de assembly, defina o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Observação: há alguma penalidade para o desempenho associada ao log de falha de associação de assembly.
+Para desativar esse recurso, remova o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+ERROR 2018-06-05 14:55:16,407 [1    ] NHibernate.Util.ReflectHelper            - Could not load type MySql.Data.MySqlClient.MySqlCommand, MySql.Data.
+System.IO.FileNotFoundException: Não foi possível carregar arquivo ou assembly 'MySql.Data' ou uma de suas dependências. O sistema não pode encontrar o arquivo especificado.
+Nome do arquivo: 'MySql.Data'
+   em System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   em System.Reflection.Assembly.Load(String assemblyString)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+AVI: o log de associações de assembly está desativado.
+Para ativar o log de  falhas de assembly, defina o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Observação: há alguma penalidade para o desempenho associada ao log de falha de associação de assembly.
+Para desativar esse recurso, remova o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+FATAL 2018-06-05 14:55:16,422 [1    ] Abp.AbpBootstrapper                      - FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.HibernateException: Could not create the driver from NHibernate.Driver.MySqlDataDriver, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4. ---> System.Reflection.TargetInvocationException: Uma exceção foi acionada pelo destino de uma chamada. ---> System.ArgumentException: Não foi possível localizar o Provedor de Dados .Net Framework solicitado. Talvez ele não esteja instalado.
+   em System.Data.Common.DbProviderFactories.GetFactory(String providerInvariantName)
+   em NHibernate.Driver.ReflectionBasedDriver..ctor(String providerInvariantName, String driverAssemblyName, String connectionTypeName, String commandTypeName)
+   em NHibernate.Driver.MySqlDataDriver..ctor()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   em System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   em System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   em System.Activator.CreateInstance(Type type)
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProvider.Configure(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProviderFactory.NewConnectionProvider(IDictionary`2 settings)
+   em NHibernate.Cfg.SettingsFactory.BuildSettings(IDictionary`2 properties)
+   em NHibernate.Cfg.Configuration.BuildSettings()
+   em NHibernate.Cfg.Configuration.BuildSessionFactory()
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   em Abp.NHibernate.AbpNHibernateModule.Initialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.Modules.AbpModuleManager.StartModules()
+   em Abp.AbpBootstrapper.Initialize()
+
+
+FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.HibernateException: Could not create the driver from NHibernate.Driver.MySqlDataDriver, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4. ---> System.Reflection.TargetInvocationException: Uma exceção foi acionada pelo destino de uma chamada. ---> System.ArgumentException: Não foi possível localizar o Provedor de Dados .Net Framework solicitado. Talvez ele não esteja instalado.
+   em System.Data.Common.DbProviderFactories.GetFactory(String providerInvariantName)
+   em NHibernate.Driver.ReflectionBasedDriver..ctor(String providerInvariantName, String driverAssemblyName, String connectionTypeName, String commandTypeName)
+   em NHibernate.Driver.MySqlDataDriver..ctor()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   em System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   em System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   em System.Activator.CreateInstance(Type type)
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProvider.Configure(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProviderFactory.NewConnectionProvider(IDictionary`2 settings)
+   em NHibernate.Cfg.SettingsFactory.BuildSettings(IDictionary`2 properties)
+   em NHibernate.Cfg.Configuration.BuildSettings()
+   em NHibernate.Cfg.Configuration.BuildSessionFactory()
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   em Abp.NHibernate.AbpNHibernateModule.Initialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.Modules.AbpModuleManager.StartModules()
+   em Abp.AbpBootstrapper.Initialize()
+
+
+DEBUG 2018-06-05 14:55:26,520 [12   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 14:56:32,866 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 14:56:32,891 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 14:56:32,899 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:56:32,903 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:56:32,904 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:56:32,905 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:56:32,905 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:56:32,905 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:56:32,906 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:56:32,906 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:56:32,906 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:56:32,907 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:56:32,907 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:56:32,912 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 14:56:34,236 [1    ] NHibernate.Util.ReflectHelper            - Could not load type MySql.Data.MySqlClient.MySqlConnection, MySql.Data.
+System.IO.FileNotFoundException: Não foi possível carregar arquivo ou assembly 'MySql.Data' ou uma de suas dependências. O sistema não pode encontrar o arquivo especificado.
+Nome do arquivo: 'MySql.Data'
+   em System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   em System.Reflection.Assembly.Load(String assemblyString)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+AVI: o log de associações de assembly está desativado.
+Para ativar o log de  falhas de assembly, defina o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Observação: há alguma penalidade para o desempenho associada ao log de falha de associação de assembly.
+Para desativar esse recurso, remova o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+ERROR 2018-06-05 14:56:34,239 [1    ] NHibernate.Util.ReflectHelper            - Could not load type MySql.Data.MySqlClient.MySqlCommand, MySql.Data.
+System.IO.FileNotFoundException: Não foi possível carregar arquivo ou assembly 'MySql.Data' ou uma de suas dependências. O sistema não pode encontrar o arquivo especificado.
+Nome do arquivo: 'MySql.Data'
+   em System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   em System.Reflection.Assembly.Load(String assemblyString)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+AVI: o log de associações de assembly está desativado.
+Para ativar o log de  falhas de assembly, defina o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Observação: há alguma penalidade para o desempenho associada ao log de falha de associação de assembly.
+Para desativar esse recurso, remova o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+ERROR 2018-06-05 14:56:34,252 [1    ] NHibernate.Tool.hbm2ddl.SchemaUpdate     - could not get database metadata
+NHibernate.HibernateException: Could not create the driver from NHibernate.Driver.MySqlDataDriver, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4. ---> System.Reflection.TargetInvocationException: Uma exceção foi acionada pelo destino de uma chamada. ---> System.ArgumentException: Não foi possível localizar o Provedor de Dados .Net Framework solicitado. Talvez ele não esteja instalado.
+   em System.Data.Common.DbProviderFactories.GetFactory(String providerInvariantName)
+   em NHibernate.Driver.ReflectionBasedDriver..ctor(String providerInvariantName, String driverAssemblyName, String connectionTypeName, String commandTypeName)
+   em NHibernate.Driver.MySqlDataDriver..ctor()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   em System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   em System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   em System.Activator.CreateInstance(Type type)
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProvider.Configure(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProviderFactory.NewConnectionProvider(IDictionary`2 settings)
+   em NHibernate.Tool.hbm2ddl.ManagedProviderConnectionHelper.Prepare()
+   em NHibernate.Tool.hbm2ddl.SchemaUpdate.Execute(Action`1 scriptAction, Boolean doUpdate)
+ERROR 2018-06-05 14:56:34,253 [1    ] NHibernate.Tool.hbm2ddl.SchemaUpdate     - could not complete schema update
+NHibernate.HibernateException: Could not create the driver from NHibernate.Driver.MySqlDataDriver, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4. ---> System.Reflection.TargetInvocationException: Uma exceção foi acionada pelo destino de uma chamada. ---> System.ArgumentException: Não foi possível localizar o Provedor de Dados .Net Framework solicitado. Talvez ele não esteja instalado.
+   em System.Data.Common.DbProviderFactories.GetFactory(String providerInvariantName)
+   em NHibernate.Driver.ReflectionBasedDriver..ctor(String providerInvariantName, String driverAssemblyName, String connectionTypeName, String commandTypeName)
+   em NHibernate.Driver.MySqlDataDriver..ctor()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   em System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   em System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   em System.Activator.CreateInstance(Type type)
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProvider.Configure(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProviderFactory.NewConnectionProvider(IDictionary`2 settings)
+   em NHibernate.Tool.hbm2ddl.ManagedProviderConnectionHelper.Prepare()
+   em NHibernate.Tool.hbm2ddl.SchemaUpdate.Execute(Action`1 scriptAction, Boolean doUpdate)
+ERROR 2018-06-05 14:56:34,308 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 14:56:34,308 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 14:56:34,477 [1    ] NHibernate.Util.ReflectHelper            - Could not load type MySql.Data.MySqlClient.MySqlConnection, MySql.Data.
+System.IO.FileNotFoundException: Não foi possível carregar arquivo ou assembly 'MySql.Data' ou uma de suas dependências. O sistema não pode encontrar o arquivo especificado.
+Nome do arquivo: 'MySql.Data'
+   em System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   em System.Reflection.Assembly.Load(String assemblyString)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+AVI: o log de associações de assembly está desativado.
+Para ativar o log de  falhas de assembly, defina o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Observação: há alguma penalidade para o desempenho associada ao log de falha de associação de assembly.
+Para desativar esse recurso, remova o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+ERROR 2018-06-05 14:56:34,478 [1    ] NHibernate.Util.ReflectHelper            - Could not load type MySql.Data.MySqlClient.MySqlCommand, MySql.Data.
+System.IO.FileNotFoundException: Não foi possível carregar arquivo ou assembly 'MySql.Data' ou uma de suas dependências. O sistema não pode encontrar o arquivo especificado.
+Nome do arquivo: 'MySql.Data'
+   em System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   em System.Reflection.Assembly.Load(String assemblyString)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+AVI: o log de associações de assembly está desativado.
+Para ativar o log de  falhas de assembly, defina o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Observação: há alguma penalidade para o desempenho associada ao log de falha de associação de assembly.
+Para desativar esse recurso, remova o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+FATAL 2018-06-05 14:56:34,483 [1    ] Abp.AbpBootstrapper                      - FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.HibernateException: Could not create the driver from NHibernate.Driver.MySqlDataDriver, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4. ---> System.Reflection.TargetInvocationException: Uma exceção foi acionada pelo destino de uma chamada. ---> System.ArgumentException: Não foi possível localizar o Provedor de Dados .Net Framework solicitado. Talvez ele não esteja instalado.
+   em System.Data.Common.DbProviderFactories.GetFactory(String providerInvariantName)
+   em NHibernate.Driver.ReflectionBasedDriver..ctor(String providerInvariantName, String driverAssemblyName, String connectionTypeName, String commandTypeName)
+   em NHibernate.Driver.MySqlDataDriver..ctor()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   em System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   em System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   em System.Activator.CreateInstance(Type type)
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProvider.Configure(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProviderFactory.NewConnectionProvider(IDictionary`2 settings)
+   em NHibernate.Cfg.SettingsFactory.BuildSettings(IDictionary`2 properties)
+   em NHibernate.Cfg.Configuration.BuildSettings()
+   em NHibernate.Cfg.Configuration.BuildSessionFactory()
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   em Abp.NHibernate.AbpNHibernateModule.Initialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.Modules.AbpModuleManager.StartModules()
+   em Abp.AbpBootstrapper.Initialize()
+
+
+FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.HibernateException: Could not create the driver from NHibernate.Driver.MySqlDataDriver, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4. ---> System.Reflection.TargetInvocationException: Uma exceção foi acionada pelo destino de uma chamada. ---> System.ArgumentException: Não foi possível localizar o Provedor de Dados .Net Framework solicitado. Talvez ele não esteja instalado.
+   em System.Data.Common.DbProviderFactories.GetFactory(String providerInvariantName)
+   em NHibernate.Driver.ReflectionBasedDriver..ctor(String providerInvariantName, String driverAssemblyName, String connectionTypeName, String commandTypeName)
+   em NHibernate.Driver.MySqlDataDriver..ctor()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   em System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   em System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   em System.Activator.CreateInstance(Type type)
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProvider.Configure(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProviderFactory.NewConnectionProvider(IDictionary`2 settings)
+   em NHibernate.Cfg.SettingsFactory.BuildSettings(IDictionary`2 properties)
+   em NHibernate.Cfg.Configuration.BuildSettings()
+   em NHibernate.Cfg.Configuration.BuildSessionFactory()
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   em Abp.NHibernate.AbpNHibernateModule.Initialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.Modules.AbpModuleManager.StartModules()
+   em Abp.AbpBootstrapper.Initialize()
+
+
+DEBUG 2018-06-05 14:56:44,491 [6    ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 14:57:12,794 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 14:57:12,825 [1    ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 14:57:12,836 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:57:12,841 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:57:12,841 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:57:12,841 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:57:12,842 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:57:12,842 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:57:12,842 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:57:12,842 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:57:12,843 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:57:12,843 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:57:12,843 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:57:12,848 [1    ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 14:57:14,334 [1    ] NHibernate.Util.ReflectHelper            - Could not load type MySql.Data.MySqlClient.MySqlConnection, MySql.Data.
+System.IO.FileNotFoundException: Não foi possível carregar arquivo ou assembly 'MySql.Data' ou uma de suas dependências. O sistema não pode encontrar o arquivo especificado.
+Nome do arquivo: 'MySql.Data'
+   em System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   em System.Reflection.Assembly.Load(String assemblyString)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+AVI: o log de associações de assembly está desativado.
+Para ativar o log de  falhas de assembly, defina o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Observação: há alguma penalidade para o desempenho associada ao log de falha de associação de assembly.
+Para desativar esse recurso, remova o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+ERROR 2018-06-05 14:57:14,338 [1    ] NHibernate.Util.ReflectHelper            - Could not load type MySql.Data.MySqlClient.MySqlCommand, MySql.Data.
+System.IO.FileNotFoundException: Não foi possível carregar arquivo ou assembly 'MySql.Data' ou uma de suas dependências. O sistema não pode encontrar o arquivo especificado.
+Nome do arquivo: 'MySql.Data'
+   em System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   em System.Reflection.Assembly.Load(String assemblyString)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+AVI: o log de associações de assembly está desativado.
+Para ativar o log de  falhas de assembly, defina o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Observação: há alguma penalidade para o desempenho associada ao log de falha de associação de assembly.
+Para desativar esse recurso, remova o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+ERROR 2018-06-05 14:57:14,350 [1    ] NHibernate.Tool.hbm2ddl.SchemaUpdate     - could not get database metadata
+NHibernate.HibernateException: Could not create the driver from NHibernate.Driver.MySqlDataDriver, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4. ---> System.Reflection.TargetInvocationException: Uma exceção foi acionada pelo destino de uma chamada. ---> System.ArgumentException: Não foi possível localizar o Provedor de Dados .Net Framework solicitado. Talvez ele não esteja instalado.
+   em System.Data.Common.DbProviderFactories.GetFactory(String providerInvariantName)
+   em NHibernate.Driver.ReflectionBasedDriver..ctor(String providerInvariantName, String driverAssemblyName, String connectionTypeName, String commandTypeName)
+   em NHibernate.Driver.MySqlDataDriver..ctor()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   em System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   em System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   em System.Activator.CreateInstance(Type type)
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProvider.Configure(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProviderFactory.NewConnectionProvider(IDictionary`2 settings)
+   em NHibernate.Tool.hbm2ddl.ManagedProviderConnectionHelper.Prepare()
+   em NHibernate.Tool.hbm2ddl.SchemaUpdate.Execute(Action`1 scriptAction, Boolean doUpdate)
+ERROR 2018-06-05 14:57:14,350 [1    ] NHibernate.Tool.hbm2ddl.SchemaUpdate     - could not complete schema update
+NHibernate.HibernateException: Could not create the driver from NHibernate.Driver.MySqlDataDriver, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4. ---> System.Reflection.TargetInvocationException: Uma exceção foi acionada pelo destino de uma chamada. ---> System.ArgumentException: Não foi possível localizar o Provedor de Dados .Net Framework solicitado. Talvez ele não esteja instalado.
+   em System.Data.Common.DbProviderFactories.GetFactory(String providerInvariantName)
+   em NHibernate.Driver.ReflectionBasedDriver..ctor(String providerInvariantName, String driverAssemblyName, String connectionTypeName, String commandTypeName)
+   em NHibernate.Driver.MySqlDataDriver..ctor()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   em System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   em System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   em System.Activator.CreateInstance(Type type)
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProvider.Configure(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProviderFactory.NewConnectionProvider(IDictionary`2 settings)
+   em NHibernate.Tool.hbm2ddl.ManagedProviderConnectionHelper.Prepare()
+   em NHibernate.Tool.hbm2ddl.SchemaUpdate.Execute(Action`1 scriptAction, Boolean doUpdate)
+ERROR 2018-06-05 14:57:14,404 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 14:57:14,404 [1    ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 14:57:14,584 [1    ] NHibernate.Util.ReflectHelper            - Could not load type MySql.Data.MySqlClient.MySqlConnection, MySql.Data.
+System.IO.FileNotFoundException: Não foi possível carregar arquivo ou assembly 'MySql.Data' ou uma de suas dependências. O sistema não pode encontrar o arquivo especificado.
+Nome do arquivo: 'MySql.Data'
+   em System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   em System.Reflection.Assembly.Load(String assemblyString)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+AVI: o log de associações de assembly está desativado.
+Para ativar o log de  falhas de assembly, defina o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Observação: há alguma penalidade para o desempenho associada ao log de falha de associação de assembly.
+Para desativar esse recurso, remova o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+ERROR 2018-06-05 14:57:14,585 [1    ] NHibernate.Util.ReflectHelper            - Could not load type MySql.Data.MySqlClient.MySqlCommand, MySql.Data.
+System.IO.FileNotFoundException: Não foi possível carregar arquivo ou assembly 'MySql.Data' ou uma de suas dependências. O sistema não pode encontrar o arquivo especificado.
+Nome do arquivo: 'MySql.Data'
+   em System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   em System.Reflection.Assembly.Load(String assemblyString)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+AVI: o log de associações de assembly está desativado.
+Para ativar o log de  falhas de assembly, defina o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Observação: há alguma penalidade para o desempenho associada ao log de falha de associação de assembly.
+Para desativar esse recurso, remova o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+FATAL 2018-06-05 14:57:14,596 [1    ] Abp.AbpBootstrapper                      - FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.HibernateException: Could not create the driver from NHibernate.Driver.MySqlDataDriver, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4. ---> System.Reflection.TargetInvocationException: Uma exceção foi acionada pelo destino de uma chamada. ---> System.ArgumentException: Não foi possível localizar o Provedor de Dados .Net Framework solicitado. Talvez ele não esteja instalado.
+   em System.Data.Common.DbProviderFactories.GetFactory(String providerInvariantName)
+   em NHibernate.Driver.ReflectionBasedDriver..ctor(String providerInvariantName, String driverAssemblyName, String connectionTypeName, String commandTypeName)
+   em NHibernate.Driver.MySqlDataDriver..ctor()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   em System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   em System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   em System.Activator.CreateInstance(Type type)
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProvider.Configure(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProviderFactory.NewConnectionProvider(IDictionary`2 settings)
+   em NHibernate.Cfg.SettingsFactory.BuildSettings(IDictionary`2 properties)
+   em NHibernate.Cfg.Configuration.BuildSettings()
+   em NHibernate.Cfg.Configuration.BuildSessionFactory()
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   em Abp.NHibernate.AbpNHibernateModule.Initialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.Modules.AbpModuleManager.StartModules()
+   em Abp.AbpBootstrapper.Initialize()
+
+
+FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.HibernateException: Could not create the driver from NHibernate.Driver.MySqlDataDriver, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4. ---> System.Reflection.TargetInvocationException: Uma exceção foi acionada pelo destino de uma chamada. ---> System.ArgumentException: Não foi possível localizar o Provedor de Dados .Net Framework solicitado. Talvez ele não esteja instalado.
+   em System.Data.Common.DbProviderFactories.GetFactory(String providerInvariantName)
+   em NHibernate.Driver.ReflectionBasedDriver..ctor(String providerInvariantName, String driverAssemblyName, String connectionTypeName, String commandTypeName)
+   em NHibernate.Driver.MySqlDataDriver..ctor()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   em System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   em System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   em System.Activator.CreateInstance(Type type)
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProvider.Configure(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProviderFactory.NewConnectionProvider(IDictionary`2 settings)
+   em NHibernate.Cfg.SettingsFactory.BuildSettings(IDictionary`2 properties)
+   em NHibernate.Cfg.Configuration.BuildSettings()
+   em NHibernate.Cfg.Configuration.BuildSessionFactory()
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   em Abp.NHibernate.AbpNHibernateModule.Initialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.Modules.AbpModuleManager.StartModules()
+   em Abp.AbpBootstrapper.Initialize()
+
+
+DEBUG 2018-06-05 14:57:24,617 [14   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 14:57:28,489 [18   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 14:57:28,516 [18   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 14:57:28,527 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:57:28,532 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:57:28,533 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:57:28,533 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:57:28,533 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:57:28,534 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:57:28,534 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:57:28,534 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:57:28,535 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:57:28,535 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:57:28,535 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 14:57:28,541 [18   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 14:57:56,639 [18   ] NHibernate.Util.ReflectHelper            - Could not load type MySql.Data.MySqlClient.MySqlConnection, MySql.Data.
+System.IO.FileNotFoundException: Não foi possível carregar arquivo ou assembly 'MySql.Data' ou uma de suas dependências. O sistema não pode encontrar o arquivo especificado.
+Nome do arquivo: 'MySql.Data'
+   em System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   em System.Reflection.Assembly.Load(String assemblyString)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+=== Informações sobre estado pré-associação ===
+LOG: DisplayName = MySql.Data
+ (Partial)
+AVI: informação de associação parcial foi fornecida para um assembly:
+AVI: Nome do Assembly: MySql.Data | ID do Domínio: 5
+AVI: uma associação parcial ocorre quando somente parte do nome de exibição do assembly é fornecida.
+AVI: isso pode fazer com que o associador carregue um assembly incorreto.
+AVI: é recomendável fornecer uma identidade textual totalmente especificada para o assembly,
+AVI: que consiste no nome simples, na versão, na cultura e no token de chave pública.
+AVI: Consulte o white paper http://go.microsoft.com/fwlink/?LinkId=109270 para obter mais informações e soluções comuns para o problema.
+LOG: Appbase = file:///C:/EnadeProject/EnadeProject.Web/
+LOG: PrivatePath inicial = C:\EnadeProject\EnadeProject.Web\bin
+Chamando assembly: NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4.
+===
+LOG: esta associação começa no contexto de carregamento default.
+LOG: usando arquivo de configuração de aplicativo: C:\EnadeProject\EnadeProject.Web\web.config
+LOG: usando arquivo de configuração de host: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet.config
+LOG: usando arquivo de configuração da máquina de C:\Windows\Microsoft.NET\Framework64\v4.0.30319\config\machine.config.
+LOG: a política não está sendo aplicada para referência neste momento (particular, personalizado, parcial ou associação de assembly baseada em local).
+LOG: a mesma associação foi vista antes e falhou com hr = 0x80070002.
+
+ERROR 2018-06-05 14:57:56,646 [18   ] NHibernate.Util.ReflectHelper            - Could not load type MySql.Data.MySqlClient.MySqlCommand, MySql.Data.
+System.IO.FileNotFoundException: Não foi possível carregar arquivo ou assembly 'MySql.Data' ou uma de suas dependências. O sistema não pode encontrar o arquivo especificado.
+Nome do arquivo: 'MySql.Data'
+   em System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   em System.Reflection.Assembly.Load(String assemblyString)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+=== Informações sobre estado pré-associação ===
+LOG: DisplayName = MySql.Data
+ (Partial)
+AVI: informação de associação parcial foi fornecida para um assembly:
+AVI: Nome do Assembly: MySql.Data | ID do Domínio: 5
+AVI: uma associação parcial ocorre quando somente parte do nome de exibição do assembly é fornecida.
+AVI: isso pode fazer com que o associador carregue um assembly incorreto.
+AVI: é recomendável fornecer uma identidade textual totalmente especificada para o assembly,
+AVI: que consiste no nome simples, na versão, na cultura e no token de chave pública.
+AVI: Consulte o white paper http://go.microsoft.com/fwlink/?LinkId=109270 para obter mais informações e soluções comuns para o problema.
+LOG: Appbase = file:///C:/EnadeProject/EnadeProject.Web/
+LOG: PrivatePath inicial = C:\EnadeProject\EnadeProject.Web\bin
+Chamando assembly: NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4.
+===
+LOG: esta associação começa no contexto de carregamento default.
+LOG: usando arquivo de configuração de aplicativo: C:\EnadeProject\EnadeProject.Web\web.config
+LOG: usando arquivo de configuração de host: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet.config
+LOG: usando arquivo de configuração da máquina de C:\Windows\Microsoft.NET\Framework64\v4.0.30319\config\machine.config.
+LOG: a política não está sendo aplicada para referência neste momento (particular, personalizado, parcial ou associação de assembly baseada em local).
+LOG: a mesma associação foi vista antes e falhou com hr = 0x80070002.
+
+ERROR 2018-06-05 14:57:56,694 [18   ] NHibernate.Tool.hbm2ddl.SchemaUpdate     - could not get database metadata
+NHibernate.HibernateException: Could not create the driver from NHibernate.Driver.MySqlDataDriver, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4. ---> System.Reflection.TargetInvocationException: Uma exceção foi acionada pelo destino de uma chamada. ---> System.ArgumentException: Não foi possível localizar o Provedor de Dados .Net Framework solicitado. Talvez ele não esteja instalado.
+   em System.Data.Common.DbProviderFactories.GetFactory(String providerInvariantName)
+   em NHibernate.Driver.ReflectionBasedDriver..ctor(String providerInvariantName, String driverAssemblyName, String connectionTypeName, String commandTypeName)
+   em NHibernate.Driver.MySqlDataDriver..ctor()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   em System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   em System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   em System.Activator.CreateInstance(Type type)
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProvider.Configure(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProviderFactory.NewConnectionProvider(IDictionary`2 settings)
+   em NHibernate.Tool.hbm2ddl.ManagedProviderConnectionHelper.Prepare()
+   em NHibernate.Tool.hbm2ddl.SchemaUpdate.Execute(Action`1 scriptAction, Boolean doUpdate)
+ERROR 2018-06-05 14:57:56,695 [18   ] NHibernate.Tool.hbm2ddl.SchemaUpdate     - could not complete schema update
+NHibernate.HibernateException: Could not create the driver from NHibernate.Driver.MySqlDataDriver, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4. ---> System.Reflection.TargetInvocationException: Uma exceção foi acionada pelo destino de uma chamada. ---> System.ArgumentException: Não foi possível localizar o Provedor de Dados .Net Framework solicitado. Talvez ele não esteja instalado.
+   em System.Data.Common.DbProviderFactories.GetFactory(String providerInvariantName)
+   em NHibernate.Driver.ReflectionBasedDriver..ctor(String providerInvariantName, String driverAssemblyName, String connectionTypeName, String commandTypeName)
+   em NHibernate.Driver.MySqlDataDriver..ctor()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   em System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   em System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   em System.Activator.CreateInstance(Type type)
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProvider.Configure(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProviderFactory.NewConnectionProvider(IDictionary`2 settings)
+   em NHibernate.Tool.hbm2ddl.ManagedProviderConnectionHelper.Prepare()
+   em NHibernate.Tool.hbm2ddl.SchemaUpdate.Execute(Action`1 scriptAction, Boolean doUpdate)
+ERROR 2018-06-05 14:57:56,771 [18   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 14:57:56,771 [18   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 14:57:57,018 [18   ] NHibernate.Util.ReflectHelper            - Could not load type MySql.Data.MySqlClient.MySqlConnection, MySql.Data.
+System.IO.FileNotFoundException: Não foi possível carregar arquivo ou assembly 'MySql.Data' ou uma de suas dependências. O sistema não pode encontrar o arquivo especificado.
+Nome do arquivo: 'MySql.Data'
+   em System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   em System.Reflection.Assembly.Load(String assemblyString)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+=== Informações sobre estado pré-associação ===
+LOG: DisplayName = MySql.Data
+ (Partial)
+AVI: informação de associação parcial foi fornecida para um assembly:
+AVI: Nome do Assembly: MySql.Data | ID do Domínio: 5
+AVI: uma associação parcial ocorre quando somente parte do nome de exibição do assembly é fornecida.
+AVI: isso pode fazer com que o associador carregue um assembly incorreto.
+AVI: é recomendável fornecer uma identidade textual totalmente especificada para o assembly,
+AVI: que consiste no nome simples, na versão, na cultura e no token de chave pública.
+AVI: Consulte o white paper http://go.microsoft.com/fwlink/?LinkId=109270 para obter mais informações e soluções comuns para o problema.
+LOG: Appbase = file:///C:/EnadeProject/EnadeProject.Web/
+LOG: PrivatePath inicial = C:\EnadeProject\EnadeProject.Web\bin
+Chamando assembly: NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4.
+===
+LOG: esta associação começa no contexto de carregamento default.
+LOG: usando arquivo de configuração de aplicativo: C:\EnadeProject\EnadeProject.Web\web.config
+LOG: usando arquivo de configuração de host: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet.config
+LOG: usando arquivo de configuração da máquina de C:\Windows\Microsoft.NET\Framework64\v4.0.30319\config\machine.config.
+LOG: a política não está sendo aplicada para referência neste momento (particular, personalizado, parcial ou associação de assembly baseada em local).
+LOG: a mesma associação foi vista antes e falhou com hr = 0x80070002.
+
+ERROR 2018-06-05 14:57:57,020 [18   ] NHibernate.Util.ReflectHelper            - Could not load type MySql.Data.MySqlClient.MySqlCommand, MySql.Data.
+System.IO.FileNotFoundException: Não foi possível carregar arquivo ou assembly 'MySql.Data' ou uma de suas dependências. O sistema não pode encontrar o arquivo especificado.
+Nome do arquivo: 'MySql.Data'
+   em System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   em System.Reflection.Assembly.Load(String assemblyString)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+=== Informações sobre estado pré-associação ===
+LOG: DisplayName = MySql.Data
+ (Partial)
+AVI: informação de associação parcial foi fornecida para um assembly:
+AVI: Nome do Assembly: MySql.Data | ID do Domínio: 5
+AVI: uma associação parcial ocorre quando somente parte do nome de exibição do assembly é fornecida.
+AVI: isso pode fazer com que o associador carregue um assembly incorreto.
+AVI: é recomendável fornecer uma identidade textual totalmente especificada para o assembly,
+AVI: que consiste no nome simples, na versão, na cultura e no token de chave pública.
+AVI: Consulte o white paper http://go.microsoft.com/fwlink/?LinkId=109270 para obter mais informações e soluções comuns para o problema.
+LOG: Appbase = file:///C:/EnadeProject/EnadeProject.Web/
+LOG: PrivatePath inicial = C:\EnadeProject\EnadeProject.Web\bin
+Chamando assembly: NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4.
+===
+LOG: esta associação começa no contexto de carregamento default.
+LOG: usando arquivo de configuração de aplicativo: C:\EnadeProject\EnadeProject.Web\web.config
+LOG: usando arquivo de configuração de host: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\aspnet.config
+LOG: usando arquivo de configuração da máquina de C:\Windows\Microsoft.NET\Framework64\v4.0.30319\config\machine.config.
+LOG: a política não está sendo aplicada para referência neste momento (particular, personalizado, parcial ou associação de assembly baseada em local).
+LOG: a mesma associação foi vista antes e falhou com hr = 0x80070002.
+
+FATAL 2018-06-05 14:57:57,028 [18   ] Abp.AbpBootstrapper                      - FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.HibernateException: Could not create the driver from NHibernate.Driver.MySqlDataDriver, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4. ---> System.Reflection.TargetInvocationException: Uma exceção foi acionada pelo destino de uma chamada. ---> System.ArgumentException: Não foi possível localizar o Provedor de Dados .Net Framework solicitado. Talvez ele não esteja instalado.
+   em System.Data.Common.DbProviderFactories.GetFactory(String providerInvariantName)
+   em NHibernate.Driver.ReflectionBasedDriver..ctor(String providerInvariantName, String driverAssemblyName, String connectionTypeName, String commandTypeName)
+   em NHibernate.Driver.MySqlDataDriver..ctor()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   em System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   em System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   em System.Activator.CreateInstance(Type type)
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProvider.Configure(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProviderFactory.NewConnectionProvider(IDictionary`2 settings)
+   em NHibernate.Cfg.SettingsFactory.BuildSettings(IDictionary`2 properties)
+   em NHibernate.Cfg.Configuration.BuildSettings()
+   em NHibernate.Cfg.Configuration.BuildSessionFactory()
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   em Abp.NHibernate.AbpNHibernateModule.Initialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.Modules.AbpModuleManager.StartModules()
+   em Abp.AbpBootstrapper.Initialize()
+
+
+FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.HibernateException: Could not create the driver from NHibernate.Driver.MySqlDataDriver, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4. ---> System.Reflection.TargetInvocationException: Uma exceção foi acionada pelo destino de uma chamada. ---> System.ArgumentException: Não foi possível localizar o Provedor de Dados .Net Framework solicitado. Talvez ele não esteja instalado.
+   em System.Data.Common.DbProviderFactories.GetFactory(String providerInvariantName)
+   em NHibernate.Driver.ReflectionBasedDriver..ctor(String providerInvariantName, String driverAssemblyName, String connectionTypeName, String commandTypeName)
+   em NHibernate.Driver.MySqlDataDriver..ctor()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   em System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   em System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   em System.Activator.CreateInstance(Type type)
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProvider.Configure(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProviderFactory.NewConnectionProvider(IDictionary`2 settings)
+   em NHibernate.Cfg.SettingsFactory.BuildSettings(IDictionary`2 properties)
+   em NHibernate.Cfg.Configuration.BuildSettings()
+   em NHibernate.Cfg.Configuration.BuildSessionFactory()
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   em Abp.NHibernate.AbpNHibernateModule.Initialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.Modules.AbpModuleManager.StartModules()
+   em Abp.AbpBootstrapper.Initialize()
+
+
+DEBUG 2018-06-05 14:59:38,680 [5    ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 15:01:25,707 [16   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 15:01:25,735 [16   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 15:01:25,744 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:01:25,748 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:01:25,749 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:01:25,749 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:01:25,749 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:01:25,749 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:01:25,750 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:01:25,750 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:01:25,750 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:01:25,751 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:01:25,751 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:01:25,756 [16   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 15:01:27,367 [16   ] NHibernate.Util.ReflectHelper            - Could not load type MySql.Data.MySqlClient.MySqlConnection, MySql.Data.
+System.IO.FileNotFoundException: Não foi possível carregar arquivo ou assembly 'MySql.Data' ou uma de suas dependências. O sistema não pode encontrar o arquivo especificado.
+Nome do arquivo: 'MySql.Data'
+   em System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   em System.Reflection.Assembly.Load(String assemblyString)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+AVI: o log de associações de assembly está desativado.
+Para ativar o log de  falhas de assembly, defina o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Observação: há alguma penalidade para o desempenho associada ao log de falha de associação de assembly.
+Para desativar esse recurso, remova o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+ERROR 2018-06-05 15:01:27,371 [16   ] NHibernate.Util.ReflectHelper            - Could not load type MySql.Data.MySqlClient.MySqlCommand, MySql.Data.
+System.IO.FileNotFoundException: Não foi possível carregar arquivo ou assembly 'MySql.Data' ou uma de suas dependências. O sistema não pode encontrar o arquivo especificado.
+Nome do arquivo: 'MySql.Data'
+   em System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   em System.Reflection.Assembly.Load(String assemblyString)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+AVI: o log de associações de assembly está desativado.
+Para ativar o log de  falhas de assembly, defina o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Observação: há alguma penalidade para o desempenho associada ao log de falha de associação de assembly.
+Para desativar esse recurso, remova o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+ERROR 2018-06-05 15:01:27,385 [16   ] NHibernate.Tool.hbm2ddl.SchemaUpdate     - could not get database metadata
+NHibernate.HibernateException: Could not create the driver from NHibernate.Driver.MySqlDataDriver, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4. ---> System.Reflection.TargetInvocationException: Uma exceção foi acionada pelo destino de uma chamada. ---> System.ArgumentException: Não foi possível localizar o Provedor de Dados .Net Framework solicitado. Talvez ele não esteja instalado.
+   em System.Data.Common.DbProviderFactories.GetFactory(String providerInvariantName)
+   em NHibernate.Driver.ReflectionBasedDriver..ctor(String providerInvariantName, String driverAssemblyName, String connectionTypeName, String commandTypeName)
+   em NHibernate.Driver.MySqlDataDriver..ctor()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   em System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   em System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   em System.Activator.CreateInstance(Type type)
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProvider.Configure(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProviderFactory.NewConnectionProvider(IDictionary`2 settings)
+   em NHibernate.Tool.hbm2ddl.ManagedProviderConnectionHelper.Prepare()
+   em NHibernate.Tool.hbm2ddl.SchemaUpdate.Execute(Action`1 scriptAction, Boolean doUpdate)
+ERROR 2018-06-05 15:01:27,386 [16   ] NHibernate.Tool.hbm2ddl.SchemaUpdate     - could not complete schema update
+NHibernate.HibernateException: Could not create the driver from NHibernate.Driver.MySqlDataDriver, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4. ---> System.Reflection.TargetInvocationException: Uma exceção foi acionada pelo destino de uma chamada. ---> System.ArgumentException: Não foi possível localizar o Provedor de Dados .Net Framework solicitado. Talvez ele não esteja instalado.
+   em System.Data.Common.DbProviderFactories.GetFactory(String providerInvariantName)
+   em NHibernate.Driver.ReflectionBasedDriver..ctor(String providerInvariantName, String driverAssemblyName, String connectionTypeName, String commandTypeName)
+   em NHibernate.Driver.MySqlDataDriver..ctor()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   em System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   em System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   em System.Activator.CreateInstance(Type type)
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProvider.Configure(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProviderFactory.NewConnectionProvider(IDictionary`2 settings)
+   em NHibernate.Tool.hbm2ddl.ManagedProviderConnectionHelper.Prepare()
+   em NHibernate.Tool.hbm2ddl.SchemaUpdate.Execute(Action`1 scriptAction, Boolean doUpdate)
+ERROR 2018-06-05 15:01:27,440 [16   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 15:01:27,440 [16   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 15:01:27,625 [16   ] NHibernate.Util.ReflectHelper            - Could not load type MySql.Data.MySqlClient.MySqlConnection, MySql.Data.
+System.IO.FileNotFoundException: Não foi possível carregar arquivo ou assembly 'MySql.Data' ou uma de suas dependências. O sistema não pode encontrar o arquivo especificado.
+Nome do arquivo: 'MySql.Data'
+   em System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   em System.Reflection.Assembly.Load(String assemblyString)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+AVI: o log de associações de assembly está desativado.
+Para ativar o log de  falhas de assembly, defina o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Observação: há alguma penalidade para o desempenho associada ao log de falha de associação de assembly.
+Para desativar esse recurso, remova o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+ERROR 2018-06-05 15:01:27,626 [16   ] NHibernate.Util.ReflectHelper            - Could not load type MySql.Data.MySqlClient.MySqlCommand, MySql.Data.
+System.IO.FileNotFoundException: Não foi possível carregar arquivo ou assembly 'MySql.Data' ou uma de suas dependências. O sistema não pode encontrar o arquivo especificado.
+Nome do arquivo: 'MySql.Data'
+   em System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   em System.Reflection.Assembly.Load(String assemblyString)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+AVI: o log de associações de assembly está desativado.
+Para ativar o log de  falhas de assembly, defina o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Observação: há alguma penalidade para o desempenho associada ao log de falha de associação de assembly.
+Para desativar esse recurso, remova o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+FATAL 2018-06-05 15:01:27,640 [16   ] Abp.AbpBootstrapper                      - FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.HibernateException: Could not create the driver from NHibernate.Driver.MySqlDataDriver, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4. ---> System.Reflection.TargetInvocationException: Uma exceção foi acionada pelo destino de uma chamada. ---> System.ArgumentException: Não foi possível localizar o Provedor de Dados .Net Framework solicitado. Talvez ele não esteja instalado.
+   em System.Data.Common.DbProviderFactories.GetFactory(String providerInvariantName)
+   em NHibernate.Driver.ReflectionBasedDriver..ctor(String providerInvariantName, String driverAssemblyName, String connectionTypeName, String commandTypeName)
+   em NHibernate.Driver.MySqlDataDriver..ctor()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   em System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   em System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   em System.Activator.CreateInstance(Type type)
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProvider.Configure(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProviderFactory.NewConnectionProvider(IDictionary`2 settings)
+   em NHibernate.Cfg.SettingsFactory.BuildSettings(IDictionary`2 properties)
+   em NHibernate.Cfg.Configuration.BuildSettings()
+   em NHibernate.Cfg.Configuration.BuildSessionFactory()
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   em Abp.NHibernate.AbpNHibernateModule.Initialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.Modules.AbpModuleManager.StartModules()
+   em Abp.AbpBootstrapper.Initialize()
+
+
+FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.HibernateException: Could not create the driver from NHibernate.Driver.MySqlDataDriver, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4. ---> System.Reflection.TargetInvocationException: Uma exceção foi acionada pelo destino de uma chamada. ---> System.ArgumentException: Não foi possível localizar o Provedor de Dados .Net Framework solicitado. Talvez ele não esteja instalado.
+   em System.Data.Common.DbProviderFactories.GetFactory(String providerInvariantName)
+   em NHibernate.Driver.ReflectionBasedDriver..ctor(String providerInvariantName, String driverAssemblyName, String connectionTypeName, String commandTypeName)
+   em NHibernate.Driver.MySqlDataDriver..ctor()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   em System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   em System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   em System.Activator.CreateInstance(Type type)
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProvider.Configure(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProviderFactory.NewConnectionProvider(IDictionary`2 settings)
+   em NHibernate.Cfg.SettingsFactory.BuildSettings(IDictionary`2 properties)
+   em NHibernate.Cfg.Configuration.BuildSettings()
+   em NHibernate.Cfg.Configuration.BuildSessionFactory()
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   em Abp.NHibernate.AbpNHibernateModule.Initialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.Modules.AbpModuleManager.StartModules()
+   em Abp.AbpBootstrapper.Initialize()
+
+
+DEBUG 2018-06-05 15:01:37,663 [23   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 15:01:50,396 [16   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 15:01:50,427 [16   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 15:01:50,435 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:01:50,440 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:01:50,440 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:01:50,441 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:01:50,441 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:01:50,441 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:01:50,441 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:01:50,442 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:01:50,442 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:01:50,442 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:01:50,443 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:01:50,448 [16   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 15:01:51,789 [16   ] NHibernate.Util.ReflectHelper            - Could not load type MySql.Data.MySqlClient.MySqlConnection, MySql.Data.
+System.IO.FileNotFoundException: Não foi possível carregar arquivo ou assembly 'MySql.Data' ou uma de suas dependências. O sistema não pode encontrar o arquivo especificado.
+Nome do arquivo: 'MySql.Data'
+   em System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   em System.Reflection.Assembly.Load(String assemblyString)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+AVI: o log de associações de assembly está desativado.
+Para ativar o log de  falhas de assembly, defina o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Observação: há alguma penalidade para o desempenho associada ao log de falha de associação de assembly.
+Para desativar esse recurso, remova o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+ERROR 2018-06-05 15:01:51,792 [16   ] NHibernate.Util.ReflectHelper            - Could not load type MySql.Data.MySqlClient.MySqlCommand, MySql.Data.
+System.IO.FileNotFoundException: Não foi possível carregar arquivo ou assembly 'MySql.Data' ou uma de suas dependências. O sistema não pode encontrar o arquivo especificado.
+Nome do arquivo: 'MySql.Data'
+   em System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   em System.Reflection.Assembly.Load(String assemblyString)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+AVI: o log de associações de assembly está desativado.
+Para ativar o log de  falhas de assembly, defina o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Observação: há alguma penalidade para o desempenho associada ao log de falha de associação de assembly.
+Para desativar esse recurso, remova o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+ERROR 2018-06-05 15:01:51,804 [16   ] NHibernate.Tool.hbm2ddl.SchemaUpdate     - could not get database metadata
+NHibernate.HibernateException: Could not create the driver from NHibernate.Driver.MySqlDataDriver, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4. ---> System.Reflection.TargetInvocationException: Uma exceção foi acionada pelo destino de uma chamada. ---> System.ArgumentException: Não foi possível localizar o Provedor de Dados .Net Framework solicitado. Talvez ele não esteja instalado.
+   em System.Data.Common.DbProviderFactories.GetFactory(String providerInvariantName)
+   em NHibernate.Driver.ReflectionBasedDriver..ctor(String providerInvariantName, String driverAssemblyName, String connectionTypeName, String commandTypeName)
+   em NHibernate.Driver.MySqlDataDriver..ctor()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   em System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   em System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   em System.Activator.CreateInstance(Type type)
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProvider.Configure(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProviderFactory.NewConnectionProvider(IDictionary`2 settings)
+   em NHibernate.Tool.hbm2ddl.ManagedProviderConnectionHelper.Prepare()
+   em NHibernate.Tool.hbm2ddl.SchemaUpdate.Execute(Action`1 scriptAction, Boolean doUpdate)
+ERROR 2018-06-05 15:01:51,805 [16   ] NHibernate.Tool.hbm2ddl.SchemaUpdate     - could not complete schema update
+NHibernate.HibernateException: Could not create the driver from NHibernate.Driver.MySqlDataDriver, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4. ---> System.Reflection.TargetInvocationException: Uma exceção foi acionada pelo destino de uma chamada. ---> System.ArgumentException: Não foi possível localizar o Provedor de Dados .Net Framework solicitado. Talvez ele não esteja instalado.
+   em System.Data.Common.DbProviderFactories.GetFactory(String providerInvariantName)
+   em NHibernate.Driver.ReflectionBasedDriver..ctor(String providerInvariantName, String driverAssemblyName, String connectionTypeName, String commandTypeName)
+   em NHibernate.Driver.MySqlDataDriver..ctor()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   em System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   em System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   em System.Activator.CreateInstance(Type type)
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProvider.Configure(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProviderFactory.NewConnectionProvider(IDictionary`2 settings)
+   em NHibernate.Tool.hbm2ddl.ManagedProviderConnectionHelper.Prepare()
+   em NHibernate.Tool.hbm2ddl.SchemaUpdate.Execute(Action`1 scriptAction, Boolean doUpdate)
+ERROR 2018-06-05 15:01:51,854 [16   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 15:01:51,854 [16   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 15:01:52,060 [16   ] NHibernate.Util.ReflectHelper            - Could not load type MySql.Data.MySqlClient.MySqlConnection, MySql.Data.
+System.IO.FileNotFoundException: Não foi possível carregar arquivo ou assembly 'MySql.Data' ou uma de suas dependências. O sistema não pode encontrar o arquivo especificado.
+Nome do arquivo: 'MySql.Data'
+   em System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   em System.Reflection.Assembly.Load(String assemblyString)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+AVI: o log de associações de assembly está desativado.
+Para ativar o log de  falhas de assembly, defina o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Observação: há alguma penalidade para o desempenho associada ao log de falha de associação de assembly.
+Para desativar esse recurso, remova o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+ERROR 2018-06-05 15:01:52,061 [16   ] NHibernate.Util.ReflectHelper            - Could not load type MySql.Data.MySqlClient.MySqlCommand, MySql.Data.
+System.IO.FileNotFoundException: Não foi possível carregar arquivo ou assembly 'MySql.Data' ou uma de suas dependências. O sistema não pode encontrar o arquivo especificado.
+Nome do arquivo: 'MySql.Data'
+   em System.Reflection.RuntimeAssembly._nLoad(AssemblyName fileName, String codeBase, Evidence assemblySecurity, RuntimeAssembly locationHint, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoadAssemblyName(AssemblyName assemblyRef, Evidence assemblySecurity, RuntimeAssembly reqAssembly, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean throwOnFileNotFound, Boolean forIntrospection, Boolean suppressSecurityChecks)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, IntPtr pPrivHostBinder, Boolean forIntrospection)
+   em System.Reflection.RuntimeAssembly.InternalLoad(String assemblyString, Evidence assemblySecurity, StackCrawlMark& stackMark, Boolean forIntrospection)
+   em System.Reflection.Assembly.Load(String assemblyString)
+   em NHibernate.Util.ReflectHelper.TypeFromAssembly(AssemblyQualifiedTypeName name, Boolean throwOnError)
+
+AVI: o log de associações de assembly está desativado.
+Para ativar o log de  falhas de assembly, defina o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog] (DWORD) como 1.
+Observação: há alguma penalidade para o desempenho associada ao log de falha de associação de assembly.
+Para desativar esse recurso, remova o valor do Registro [HKLM\Software\Microsoft\Fusion!EnableLog].
+
+FATAL 2018-06-05 15:01:52,066 [16   ] Abp.AbpBootstrapper                      - FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.HibernateException: Could not create the driver from NHibernate.Driver.MySqlDataDriver, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4. ---> System.Reflection.TargetInvocationException: Uma exceção foi acionada pelo destino de uma chamada. ---> System.ArgumentException: Não foi possível localizar o Provedor de Dados .Net Framework solicitado. Talvez ele não esteja instalado.
+   em System.Data.Common.DbProviderFactories.GetFactory(String providerInvariantName)
+   em NHibernate.Driver.ReflectionBasedDriver..ctor(String providerInvariantName, String driverAssemblyName, String connectionTypeName, String commandTypeName)
+   em NHibernate.Driver.MySqlDataDriver..ctor()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   em System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   em System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   em System.Activator.CreateInstance(Type type)
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProvider.Configure(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProviderFactory.NewConnectionProvider(IDictionary`2 settings)
+   em NHibernate.Cfg.SettingsFactory.BuildSettings(IDictionary`2 properties)
+   em NHibernate.Cfg.Configuration.BuildSettings()
+   em NHibernate.Cfg.Configuration.BuildSessionFactory()
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   em Abp.NHibernate.AbpNHibernateModule.Initialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.Modules.AbpModuleManager.StartModules()
+   em Abp.AbpBootstrapper.Initialize()
+
+
+FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> NHibernate.HibernateException: Could not create the driver from NHibernate.Driver.MySqlDataDriver, NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4. ---> System.Reflection.TargetInvocationException: Uma exceção foi acionada pelo destino de uma chamada. ---> System.ArgumentException: Não foi possível localizar o Provedor de Dados .Net Framework solicitado. Talvez ele não esteja instalado.
+   em System.Data.Common.DbProviderFactories.GetFactory(String providerInvariantName)
+   em NHibernate.Driver.ReflectionBasedDriver..ctor(String providerInvariantName, String driverAssemblyName, String connectionTypeName, String commandTypeName)
+   em NHibernate.Driver.MySqlDataDriver..ctor()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.RuntimeTypeHandle.CreateInstance(RuntimeType type, Boolean publicOnly, Boolean noCheck, Boolean& canBeCached, RuntimeMethodHandleInternal& ctor, Boolean& bNeedSecurityCheck)
+   em System.RuntimeType.CreateInstanceSlow(Boolean publicOnly, Boolean skipCheckThis, Boolean fillCache, StackCrawlMark& stackMark)
+   em System.Activator.CreateInstance(Type type, Boolean nonPublic)
+   em System.Activator.CreateInstance(Type type)
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em NHibernate.Connection.ConnectionProvider.ConfigureDriver(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProvider.Configure(IDictionary`2 settings)
+   em NHibernate.Connection.ConnectionProviderFactory.NewConnectionProvider(IDictionary`2 settings)
+   em NHibernate.Cfg.SettingsFactory.BuildSettings(IDictionary`2 properties)
+   em NHibernate.Cfg.Configuration.BuildSettings()
+   em NHibernate.Cfg.Configuration.BuildSessionFactory()
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   em Abp.NHibernate.AbpNHibernateModule.Initialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.Modules.AbpModuleManager.StartModules()
+   em Abp.AbpBootstrapper.Initialize()
+
+
+DEBUG 2018-06-05 15:02:02,074 [21   ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 15:04:05,468 [16   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 15:04:05,523 [16   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 15:04:05,539 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:04:05,547 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:04:05,549 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:04:05,549 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:04:05,550 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:04:05,550 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:04:05,551 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:04:05,551 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:04:05,551 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:04:05,552 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:04:05,552 [16   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:04:05,559 [16   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 15:04:07,425 [16   ] NHibernate.Tool.hbm2ddl.SchemaUpdate     - could not get database metadata
+System.ArgumentException: Value 'Preferred' is not of the correct type.
+   em MySql.Data.MySqlClient.MySqlConnectionStringOption.ValidateValue(Object& value)
+   em MySql.Data.MySqlClient.MySqlConnectionStringOption.<>c.<.ctor>b__4_0(MySqlConnectionStringBuilder msb, MySqlConnectionStringOption sender, Object value)
+   em System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   em MySql.Data.MySqlClient.MySqlConnectionStringBuilder..ctor(String connStr)
+   em MySql.Data.MySqlClient.MySqlConnection.set_ConnectionString(String value)
+   em NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   em NHibernate.Tool.hbm2ddl.ManagedProviderConnectionHelper.Prepare()
+   em NHibernate.Tool.hbm2ddl.SchemaUpdate.Execute(Action`1 scriptAction, Boolean doUpdate)
+ERROR 2018-06-05 15:04:07,429 [16   ] NHibernate.Tool.hbm2ddl.SchemaUpdate     - could not complete schema update
+System.ArgumentException: Value 'Preferred' is not of the correct type.
+   em MySql.Data.MySqlClient.MySqlConnectionStringOption.ValidateValue(Object& value)
+   em MySql.Data.MySqlClient.MySqlConnectionStringOption.<>c.<.ctor>b__4_0(MySqlConnectionStringBuilder msb, MySqlConnectionStringOption sender, Object value)
+   em System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   em MySql.Data.MySqlClient.MySqlConnectionStringBuilder..ctor(String connStr)
+   em MySql.Data.MySqlClient.MySqlConnection.set_ConnectionString(String value)
+   em NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   em NHibernate.Tool.hbm2ddl.ManagedProviderConnectionHelper.Prepare()
+   em NHibernate.Tool.hbm2ddl.SchemaUpdate.Execute(Action`1 scriptAction, Boolean doUpdate)
+ERROR 2018-06-05 15:04:07,481 [16   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 15:04:07,481 [16   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+FATAL 2018-06-05 15:04:07,762 [16   ] Abp.AbpBootstrapper                      - FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> System.ArgumentException: Value 'Preferred' is not of the correct type.
+   em MySql.Data.MySqlClient.MySqlConnectionStringOption.ValidateValue(Object& value)
+   em MySql.Data.MySqlClient.MySqlConnectionStringOption.<>c.<.ctor>b__4_0(MySqlConnectionStringBuilder msb, MySqlConnectionStringOption sender, Object value)
+   em System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   em MySql.Data.MySqlClient.MySqlConnectionStringBuilder..ctor(String connStr)
+   em MySql.Data.MySqlClient.MySqlConnection.set_ConnectionString(String value)
+   em NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   em NHibernate.Tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.Prepare()
+   em NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.GetReservedWords(Dialect dialect, IConnectionHelper connectionHelper)
+   em NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.Update(ISessionFactoryImplementor sessionFactory)
+   em NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   em NHibernate.Cfg.Configuration.BuildSessionFactory()
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   em Abp.NHibernate.AbpNHibernateModule.Initialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.Modules.AbpModuleManager.StartModules()
+   em Abp.AbpBootstrapper.Initialize()
+
+
+FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> System.ArgumentException: Value 'Preferred' is not of the correct type.
+   em MySql.Data.MySqlClient.MySqlConnectionStringOption.ValidateValue(Object& value)
+   em MySql.Data.MySqlClient.MySqlConnectionStringOption.<>c.<.ctor>b__4_0(MySqlConnectionStringBuilder msb, MySqlConnectionStringOption sender, Object value)
+   em System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   em MySql.Data.MySqlClient.MySqlConnectionStringBuilder..ctor(String connStr)
+   em MySql.Data.MySqlClient.MySqlConnection.set_ConnectionString(String value)
+   em NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   em NHibernate.Tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.Prepare()
+   em NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.GetReservedWords(Dialect dialect, IConnectionHelper connectionHelper)
+   em NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.Update(ISessionFactoryImplementor sessionFactory)
+   em NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   em NHibernate.Cfg.Configuration.BuildSessionFactory()
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   em Abp.NHibernate.AbpNHibernateModule.Initialize()
+   em System.Collections.Generic.List`1.ForEach(Action`1 action)
+   em Abp.Modules.AbpModuleManager.StartModules()
+   em Abp.AbpBootstrapper.Initialize()
+
+
+DEBUG 2018-06-05 15:04:17,783 [5    ] Abp.Modules.AbpModuleManager             - Shutting down has been started
+DEBUG 2018-06-05 15:04:28,334 [18   ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-06-05 15:04:28,358 [18   ] Abp.Modules.AbpModuleManager             - Found 11 ABP modules in total.
+DEBUG 2018-06-05 15:04:28,367 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.Web.EnadeProjectWebModule, EnadeProject.Web, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:04:28,372 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.Mvc.AbpWebMvcModule, Abp.Web.Mvc, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:04:28,372 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebModule, Abp.Web, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:04:28,372 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:04:28,373 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:04:28,373 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectDataModule, EnadeProject.NHibernate, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:04:28,374 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.NHibernate.AbpNHibernateModule, Abp.NHibernate, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:04:28,374 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectCoreModule, EnadeProject.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:04:28,374 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectApplicationModule, EnadeProject.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:04:28,375 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: EnadeProject.EnadeProjectWebApiModule, EnadeProject.WebApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:04:28,375 [18   ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.WebApi.AbpWebApiModule, Abp.Web.Api, Version=3.6.1.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-06-05 15:04:28,381 [18   ] Abp.Modules.AbpModuleManager             - 11 modules loaded.
+ERROR 2018-06-05 15:04:30,640 [18   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MayHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+ERROR 2018-06-05 15:04:30,641 [18   ] NHibernate.Cfg.Configuration             - filter-def for filter named 'MustHaveTenant' was never used to filter classes nor collections.
+This may result in unexpected behavior during queries
+DEBUG 2018-06-05 15:04:33,323 [18   ] Abp.Localization.LocalizationManager     - Initializing 3 localization sources.
+DEBUG 2018-06-05 15:04:33,430 [18   ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-06-05 15:04:33,443 [18   ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-06-05 15:04:33,449 [18   ] Abp.Localization.LocalizationManager     - Initialized localization source: EnadeProject
+DEBUG 2018-06-05 15:04:33,730 [18   ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-06-05 15:04:33,778 [18   ] Abp.Logging.LogHelper                    - Dynamic web api controller is created for type 'EnadeProject.Interfaces.IService' with service name 'app/service'.
+WARN  2018-06-05 15:04:34,096 [21   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
+WARN  2018-06-05 15:04:34,151 [21   ] Abp.Logging.LogHelper                    - ISettingStore is not implemented, using DefaultConfigSettingStore which does not support GetAllListAsync.
