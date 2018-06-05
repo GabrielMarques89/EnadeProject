@@ -274,6 +274,15 @@
   <ItemGroup>
     <Compile Include="DbMigrations\VersionTable.cs" />
     <Compile Include="EnadeProjectDataModule.cs" />
+    <Compile Include="NHibernate\EntityMappings\Entidades\Pergunta.cs" />
+    <Compile Include="NHibernate\EntityMappings\Entidades\Resposta.cs" />
+    <Compile Include="NHibernate\EntityMappings\Enum\TipoSexo.cs" />
+    <Compile Include="NHibernate\EntityMappings\FrameWork_Entities\Entity.cs" />
+    <Compile Include="NHibernate\EntityMappings\FrameWork_Entities\Interfaces\IEntidadeBase.cs" />
+    <Compile Include="NHibernate\EntityMappings\FrameWork_Entities\EntidadeBase.cs" />
+    <Compile Include="NHibernate\EntityMappings\Maps\BaseClassMap.cs" />
+    <Compile Include="NHibernate\EntityMappings\Maps\PerguntaMap.cs" />
+    <Compile Include="NHibernate\EntityMappings\Maps\RespostaMap.cs" />
     <Compile Include="NHibernate\Repositories\EnadeProjectRepositoryBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -282,9 +291,7 @@
     <None Include="packages.config" />
     <None Include="RunMigrations.bat" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="NHibernate\EntityMappings\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\EnadeProject.Core\EnadeProject.Core.csproj">
       <Project>{17298ea0-af73-4f30-b6f1-2066100d7d74}</Project>

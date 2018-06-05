@@ -15,7 +15,7 @@
     <RootNamespace>EnadeProject.Web</RootNamespace>
     <AssemblyName>EnadeProject.Web</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -47,7 +47,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Abp, Version=3.6.1.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Abp">
       <HintPath>..\packages\Abp.3.6.1\lib\netstandard2.0\Abp.dll</HintPath>
     </Reference>
     <Reference Include="Abp.AutoMapper, Version=3.6.1.0, Culture=neutral, processorArchitecture=MSIL">
@@ -588,7 +588,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>61814</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:61754/</IISUrl>
+          <IISUrl>http://localhost/EnadeProject.Web</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

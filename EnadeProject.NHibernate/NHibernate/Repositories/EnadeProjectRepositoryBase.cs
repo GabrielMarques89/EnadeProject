@@ -29,7 +29,5 @@ namespace EnadeProject.NHibernate.Repositories
         protected EnadeProjectRepositoryBase(ISessionProvider sessionProvider) : base(sessionProvider)
         {
         }
-
-        //do not add any method here, add to the class above (since this inherits it)
     }
 }
