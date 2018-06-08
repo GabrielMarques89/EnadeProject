@@ -39,7 +39,6 @@ namespace EnadeProject.NHibernate.EntityMappings.FrameWork_Entities
         ///     O framework se encarrega de controlar o creationTime
         /// </summary>
         public virtual DateTime CreationTime { get; set; }
-
         public virtual long? CreatorUserId { get; set; }
         public virtual DateTime? LastModificationTime { get; set; }
         public virtual long? LastModifierUserId { get; set; }

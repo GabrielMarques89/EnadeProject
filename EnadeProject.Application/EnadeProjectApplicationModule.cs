@@ -1,9 +1,10 @@
 ﻿using System.Reflection;
+using Abp.AutoMapper;
 using Abp.Modules;
 
 namespace EnadeProject
 {
-    [DependsOn(typeof(EnadeProjectCoreModule))]
+    [DependsOn(typeof(EnadeProjectCoreModule), typeof(AbpAutoMapperModule))]
     public class EnadeProjectApplicationModule : AbpModule
     {
         public override void Initialize()

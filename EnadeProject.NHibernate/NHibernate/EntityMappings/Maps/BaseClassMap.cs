@@ -12,18 +12,17 @@ namespace EnadeProject.NHibernate.EntityMappings.Maps
         public BaseClassMap()
         {
             Id(x => x.Id).Column("Id").GeneratedBy.Identity().Not.Nullable();
-            Map(x => x.CreationTime).Column("Data_Hora_Criacao").Generated.Insert().CustomSqlType("timestamp").Not
+            Map(x => x.CreationTime).Column("Data_Hora_Criacao").CustomSqlType("timestamp").Not
                 .Nullable()
                 .Not.Update();
-
-            Map(x => x.CreatorUserId).Column("Id_Criador");
-            Map(x => x.LastModificationTime).Column("Data_Hora_Criacao").Generated.Insert().CustomSqlType("timestamp")
-                .Not.Nullable();
-            Map(x => x.LastModifierUserId).Column("Id_modificador");
-            Map(x => x.IsDeleted).Column("Fl_deletado");
-            Map(x => x.DeletionTime).Column("Data_Hora_Criacao").Generated.Insert().CustomSqlType("timestamp").Not
+            Map(x => x.CreatorUserId).Column("Id_Criador").Not.Update();
+            Map(x => x.LastModificationTime).Column("Data_Hora_Alteracao").CustomSqlType("timestamp")
                 .Nullable();
-            Map(x => x.DeleterUserId).Column("Id_usr_deletou");
+            Map(x => x.LastModifierUserId).Column("Id_modificador");
+            Map(x => x.IsDeleted).Column("Fl_Deletado");
+            Map(x => x.DeletionTime).Column("Data_Hora_Exclusao").CustomSqlType("timestamp")
+                .Nullable();
+            Map(x => x.DeleterUserId).Column("Id_Usr_Delete");
         }
     }
 }

@@ -1,17 +1,15 @@
-﻿using Abp.Application.Services;
+﻿using System.Linq;
+using EnadeProject.Model;
+using EnadeProject.NHibernate.EntityMappings.FrameWork_Entities;
 
 namespace EnadeProject.Interfaces
 {
-    public interface IService : IApplicationService
+    public interface IService<T,TDto, TFilter> : IServiceSimple<T,TDto>
+        where T : EntidadeBase
+        where TDto : BaseEntityDto
+        where TFilter : IFilter
     {
-        /// <summary>
-        ///     Lança uma ExcecaoRegraNegocio caso a entidade não passa na validação das regras de negócio
-        /// </summary>
-        void BusinessRulesValidation();
-
-        /// <summary>
-        ///     Lança exceção caso a entidade não passe pelas validações comuns (tamanho, nulidade, formato e etc)
-        /// </summary>
-        void EntityValidation();
+        //void IService(IRepository<T> repository, IObjectMapper objectMapper, string doidera);
+        IQueryable<T> Filter<TFiltro>(TFiltro filtro) where TFiltro : TFilter;
     }
 }

@@ -19,7 +19,7 @@ namespace EnadeProject.NHibernate.EntityMappings.Entidades
 
         public override bool IsTransient()
         {
-            throw new NotImplementedException();
+            return false;
         }
     }
 }

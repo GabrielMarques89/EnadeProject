@@ -1,5 +1,6 @@
 ﻿using System.Net;
 using System.Net.Http;
+using Abp.Application.Services.Dto;
 using Abp.Web.Models;
 using Abp.WebApi.Controllers;
 using Newtonsoft.Json;
@@ -9,6 +10,8 @@ namespace EnadeProject.Controllers
     [WrapResult(WrapOnSuccess = false, WrapOnError = true)]
     public class BaseRestController : AbpApiController
     {
+        protected static readonly PagedAndSortedResultRequestDto DefaultPagedAndSortedRequest = new PagedAndSortedResultRequestDto{ SkipCount = 0,MaxResultCount = 10 };
+        
         #region Response Wrappers
 
         protected string ToJson(object obj)

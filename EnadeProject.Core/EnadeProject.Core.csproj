@@ -187,6 +187,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commons\Extensions\IQueryableExtensions.cs" />
+    <Compile Include="Commons\Helpers\FileLogger.cs" />
     <Compile Include="EnadeProjectConsts.cs" />
     <Compile Include="EnadeProjectCoreModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

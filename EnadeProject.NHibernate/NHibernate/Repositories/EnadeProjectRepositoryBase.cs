@@ -1,6 +1,7 @@
 ﻿using Abp.Domain.Entities;
 using Abp.NHibernate;
 using Abp.NHibernate.Repositories;
+using AutoMapper;
 
 namespace EnadeProject.NHibernate.Repositories
 {
@@ -12,9 +13,7 @@ namespace EnadeProject.NHibernate.Repositories
     public abstract class EnadeProjectRepositoryBase<TEntity, TPrimaryKey> : NhRepositoryBase<TEntity, TPrimaryKey>
         where TEntity : class, IEntity<TPrimaryKey>
     {
-        protected EnadeProjectRepositoryBase(ISessionProvider sessionProvider) : base(sessionProvider)
-        {
-        }
+        protected EnadeProjectRepositoryBase(ISessionProvider sessionProvider) : base(sessionProvider){}
 
         //add common methods for all repositories
     }
@@ -23,8 +22,8 @@ namespace EnadeProject.NHibernate.Repositories
     /// A shortcut of EnadeProjectRepositoryBase for entities with integer Id.
     /// </summary>
     /// <typeparam name="TEntity">Entity type</typeparam>
-    public abstract class EnadeProjectRepositoryBase<TEntity> : EnadeProjectRepositoryBase<TEntity, int>
-        where TEntity : class, IEntity<int>
+    public abstract class EnadeProjectRepositoryBase<TEntity> : EnadeProjectRepositoryBase<TEntity, long>
+        where TEntity : class, IEntity<long>
     {
         protected EnadeProjectRepositoryBase(ISessionProvider sessionProvider) : base(sessionProvider)
         {
