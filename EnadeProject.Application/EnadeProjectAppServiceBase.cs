@@ -102,7 +102,7 @@ namespace EnadeProject
         }
 
         /// <summary>
-        ///     Implementação de filtros genérica. Utiliza a implementação particular do método <see cref="Filter{TFiltro}" />>
+        ///     Implementação de filtros genérica. Utiliza a implementação particular do método <see cref="ApplyExtraFilter" />>
         ///     pelo serviço que implementa uma entidade.
         /// </summary>
         /// <typeparam name="T"></typeparam>

@@ -32,28 +32,29 @@ namespace EnadeProject.Common.Helpers
         private MethodInfo GetApplyableMethod<T>(PropertyInfo property, Criterio criterio)
         {
             MethodInfo method = null;
-            var isStringType = property.PropertyType == typeof(string);
+            var tipo = property.PropertyType;
+            var isStringType = tipo == typeof(string);
             switch (criterio)
             {
                 case Criterio.Igual:
-                    var ty = property.PropertyType;
-                    method = ty.GetMethod("Equals", new[] {ty});
+                    
+                    method = tipo.GetMethod("Equals", new[] {tipo});
                     break;
                 case Criterio.Contem:
                     if (isStringType){
-                        method = property.GetType().GetMethod("Contains", new []{property.PropertyType});
+                        method = tipo.GetMethod("Contains", new []{property.PropertyType});
                     }
                     break;
                 case Criterio.IniciaCom:
                     if (isStringType)
                     {
-                        method = property.GetType().GetMethod("StartsWith", new[] {property.PropertyType});
+                        method = tipo.GetMethod("StartsWith", new[] {property.PropertyType});
                     }
                     break;
                 case Criterio.TerminaCom:
                     if (isStringType)
                     {
-                        method = property.GetType().GetMethod("EndsWith", new[] {property.PropertyType});
+                        method = tipo.GetMethod("EndsWith", new[] {property.PropertyType});
                     }
                     break;
             }

@@ -9,6 +9,12 @@ using EnadeProject.Services;
 
 namespace EnadeProject.Controllers
 {
+    public class CompleteFucker
+    {
+        public FiltroEstaticoPergunta filtro { get; set;  }
+        public PagedAndSortedResultRequestDto request { get; set; }
+    }
+
     [RoutePrefix("test")]
     public class TesteController : BaseRestController
     {
@@ -32,38 +38,9 @@ namespace EnadeProject.Controllers
 
         [HttpPost]
         [Route("Listar")]
-        public HttpResponseMessage ListarPerguntas()
+        public HttpResponseMessage ListarPerguntas(CompleteFucker fucker)
         {
-            PagedAndSortedResultRequestDto pagedAndSortedResultRequest = null;
-            if (pagedAndSortedResultRequest == null)
-            {
-                pagedAndSortedResultRequest = DefaultPagedAndSortedRequest;
-            }
-
-            var filtro = HardCodedFiltro();
-            return ResponseWrapper(_service.GetAndFilter(filtro,pagedAndSortedResultRequest));
-        }
-
-        private static FiltroEstaticoPergunta HardCodedFiltro()
-        {
-            return new FiltroEstaticoPergunta
-            {
-                Set = new List<IndividualFilter>
-                {
-                    //new IndividualFilter
-                    //{
-                    //    Campo = "Conteudo",
-                    //    Value = "Isso foi uma pergunta de teste ?",
-                    //    Criteria = Criterio.Igual,
-                    //}
-                    new IndividualFilter
-                    {
-                        Campo = "Id",
-                        Value = "1",
-                        Criteria = Criterio.Igual,
-                    }
-                }
-            };
+            return ResponseWrapper(_service.GetAndFilter(fucker.filtro, fucker.request ?? DefaultPagedAndSortedRequest ));
         }
 
         [HttpGet]
