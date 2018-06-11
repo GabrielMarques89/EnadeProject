@@ -228,8 +228,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controllers\BaseRestController.cs" />
-    <Compile Include="Controllers\TesteController.cs" />
+    <Compile Include="Controllers\BaseControllers\BaseCrudApiController.cs" />
+    <Compile Include="Controllers\BaseControllers\BaseRestController.cs" />
+    <Compile Include="Controllers\PerguntaApiController.cs" />
+    <Compile Include="Controllers\Interface\IEntityRestController.cs" />
+    <Compile Include="Controllers\RespostaController.cs" />
     <Compile Include="EnadeProjectWebApiModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

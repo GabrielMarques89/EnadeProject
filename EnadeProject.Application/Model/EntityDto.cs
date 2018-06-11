@@ -1,18 +1,19 @@
 ﻿#region Imports
 
-using System;
 using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
-using Abp.Domain.Entities.Auditing;
 using EnadeProject.NHibernate.EntityMappings.FrameWork_Entities;
 
 #endregion
 
 namespace EnadeProject.Model
 {
+    public interface IEntityDto : IEntityDto<long>{}
+
     [AutoMapTo(typeof(EntidadeBase))]
-    public abstract class BaseEntityDto : EntityDto<long>
+    public abstract class EntityDto : IEntityDto
     {
+        public long Id { get; set; }
         //public DateTime CreationTime { get; set; }
         //public long? CreatorUserId { get; set; }
         //public DateTime? LastModificationTime { get; set; }

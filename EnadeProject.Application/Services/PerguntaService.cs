@@ -11,16 +11,16 @@ using EnadeProject.NHibernate.EntityMappings.Entidades;
 
 namespace EnadeProject.Services
 {
-    public class PerguntaService : EnadeProjectAppServiceBase<Pergunta,PerguntaDto, FiltroEstaticoPergunta>
+    public class PerguntaService : EnadeProjectAppServiceBase<Pergunta,PerguntaDto, PerguntaFilter>
     {
         public PerguntaService(IRepository<Pergunta,long> repository, IObjectMapper objectMapper) : base(
             repository, objectMapper){}
         
 
-        public override Del<IQueryable<Pergunta>, FiltroEstaticoPergunta> ApplyExtraFilter { get; set; } = 
-        delegate (IQueryable<Pergunta> set, FiltroEstaticoPergunta filtro)
+        public override Del<IQueryable<Pergunta>, PerguntaFilter> ApplyExtraFilter { get; set; } = 
+        delegate (IQueryable<Pergunta> set, PerguntaFilter filtro)
         {
-            //TODO: Implementações de qualquer filtro presente na classe FiltroEstaticoPergunta
+            //TODO: Implementações de qualquer filtro presente na classe PerguntaFilter
             return set;
         };
     }

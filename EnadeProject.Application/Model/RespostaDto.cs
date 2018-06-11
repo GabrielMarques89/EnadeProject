@@ -4,7 +4,7 @@ using EnadeProject.NHibernate.EntityMappings.Entidades;
 namespace EnadeProject.Model
 {
     [AutoMapTo(typeof(Resposta))]
-    public class RespostaDto : BaseEntityDto
+    public class RespostaDto : EntityDto
     {
         public string Conteudo { get; set; }
 

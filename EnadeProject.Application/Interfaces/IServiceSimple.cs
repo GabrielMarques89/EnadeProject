@@ -1,9 +1,8 @@
 ﻿using Abp.Application.Services;
-using Abp.Application.Services.Dto;
-using EnadeProject.Model;
+using IEntityDto = EnadeProject.Model.IEntityDto;
 
 namespace EnadeProject.Interfaces
 {
-    public interface IServiceSimple<T,TDto> : ICrudAppService<TDto,long> where TDto : BaseEntityDto
+    public interface IServiceSimple<TDto> : ICrudAppService<TDto,long> where TDto : IEntityDto
     {}
 }

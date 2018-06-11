@@ -1,4 +1,4 @@
-﻿#region Imports
+﻿#region Região de Imports
 
 using System;
 using System.Linq;
@@ -10,8 +10,9 @@ using Abp.Linq.Extensions;
 using Abp.ObjectMapping;
 using EnadeProject.Common.Helpers;
 using EnadeProject.Interfaces;
-using EnadeProject.Model;
 using EnadeProject.NHibernate.EntityMappings.FrameWork_Entities;
+using EnadeProject.NHibernate.EntityMappings.FrameWork_Entities.Interfaces;
+using IEntityDto = EnadeProject.Model.IEntityDto;
 
 #endregion
 
@@ -19,115 +20,128 @@ namespace EnadeProject
 {
     /// <inheritdoc cref="ApplicationService" />
     /// <summary>
-    ///     Contém métodos genéricos para comportamentos recorrentes. Além disso, força a implementação de métodos de customização.
+    ///     Contém métodos genéricos para comportamentos recorrentes. Além disso, força a implementação de métodos de
+    ///     customização.
     /// </summary>
-    public abstract class EnadeProjectAppServiceBase<THerdaEntidadeBase, TEntityDto, TFilter>
-        : ApplicationService, IService<THerdaEntidadeBase, TEntityDto, TFilter>
-        where THerdaEntidadeBase : EntidadeBase
-        where TEntityDto : BaseEntityDto
+    public abstract class EnadeProjectAppServiceBase<TEntity, TEntityDto, TFilter>
+        : ApplicationService,
+          IService<TEntity, TEntityDto, TFilter>
+        where TEntity : EntidadeBase
+        where TEntityDto : IEntityDto
         where TFilter : IFilter
-
     {
-        public delegate IQueryable<THerdaEntidadeBase> Del<in TIqueryble, in T>(TIqueryble set, T item)
-            where TIqueryble : IQueryable<THerdaEntidadeBase> where T : TFilter;
+        public delegate IQueryable<TEntity> Del<in TIqueryble, in T>(TIqueryble set, T item)
+            where TIqueryble : IQueryable<TEntity> where T : TFilter;
 
-        // ReSharper disable once NotAccessedField.Local -- Classe base não usa diretamente
-        private ExpressionHelper ExpressionHelper { get; set; } = new ExpressionHelper();
-        private readonly IObjectMapper _objectMapper;
-        protected readonly IRepository<THerdaEntidadeBase,long> Repository;
+        // ReSharper disable once NotAccessedField.Local
+        private readonly   IObjectMapper              _objectMapper;
+        protected readonly IRepository<TEntity, long> Repository;
 
-        protected EnadeProjectAppServiceBase(IRepository<THerdaEntidadeBase,long> repository,
-            IObjectMapper objectMapper)
+        protected EnadeProjectAppServiceBase(IRepository<TEntity, long> repository,
+                                             IObjectMapper              objectMapper)
         {
-            Repository = repository;
-            _objectMapper = objectMapper;
+            Repository             = repository;
+            _objectMapper          = objectMapper;
             LocalizationSourceName = EnadeProjectConsts.LocalizationSourceName;
         }
 
-        public abstract Del<IQueryable<THerdaEntidadeBase>, TFilter> ApplyExtraFilter { get; set; }
+        // ReSharper disable once NotAccessedField.Local -- Classe base não usa diretamente
+        protected ExpressionHelper ExpressionHelper { get; } = new ExpressionHelper();
+
+        public abstract Del<IQueryable<TEntity>, TFilter> ApplyExtraFilter { get; set; }
 
         public TEntityDto Get(EntityDto<long> input)
         {
-            var result = ObjectMapper.Map(Repository.Single(x => x.Id == input.Id), input);
-            return (TEntityDto) result;
+            return Get(input.Id);
         }
 
         public PagedResultDto<TEntityDto> GetAll(PagedAndSortedResultRequestDto input)
         {
-            return CreatePagedResult(Repository.GetAll(), input);
+            return ApplyPagination(Repository.GetAll(), input);
         }
 
-        public TEntityDto Create(TEntityDto input)
+        public TEntityDto Get(long input)
         {
-            var model = ObjectMapper.Map(input, Activator.CreateInstance<THerdaEntidadeBase>());
-            return ObjectMapper.Map(Repository.Insert(model), input);
-        }
-
-        public TEntityDto Update(TEntityDto input)
-        {
-            var model = ObjectMapper.Map(input, Activator.CreateInstance<THerdaEntidadeBase>());
-            return ObjectMapper.Map(Repository.Update(model), input);
-        }
-
-        public void Delete(EntityDto<long> input)
-        {
-            Repository.Delete(input.Id);
+            var result = ObjectMapper.Map(Repository.Single(x => x.Id == input),
+                                          Activator.CreateInstance<TEntityDto>());
+            return result;
         }
 
         /// <summary>
         ///     Implementação particular de um service sobre a aplicação de filtros.
         /// </summary>
-        /// <typeparam name="TFiltro"></typeparam>
         /// <param name="filtro"></param>
         /// <returns></returns>
-        //public abstract IQueryable<THerdaEntidadeBase> Filter<T>(T filtro) where T : BaseStaticFilter<TEntityDto>;
-        public IQueryable<THerdaEntidadeBase> Filter<TFiltro>(TFiltro filtro) where TFiltro : TFilter
+
+        //public abstract IQueryable<THerdaEntidadeBase> ApplyFilter<T>(T filtro) where T : BaseStaticFilter<TEntityDto>;
+        public IQueryable<TEntity> ApplyFilter(TFilter filtro)
         {
             var set = Repository.GetAll();
             if (filtro.Set.Count >= 1)
                 foreach (var filter in filtro.Set)
                 {
-                    var property = typeof(TEntityDto).GetProperties().Single(x => x.Name == filter.Campo);
+                    var property       = typeof(TEntity).GetProperties().Single(x => x.Name == filter.Campo);
                     var convertedValue = Convert.ChangeType(filter.Value, property.PropertyType);
-                    var lambda = ExpressionHelper.GenerateLambdaOperationExpression<THerdaEntidadeBase>(property, convertedValue, filter.Criteria);
+                    var lambda =
+                        ExpressionHelper.GenerateLambdaOperationExpression<TEntity>(property, convertedValue,
+                                                                                    filter.Criteria);
                     set = set.Where(lambda);
                 }
 
-            if (ApplyExtraFilter != null)
-            {
-                set = ApplyExtraFilter(set, filtro);
-            }
+            if (ApplyExtraFilter != null) set = ApplyExtraFilter(set, filtro);
 
             return set;
+        }
+
+        public TEntityDto Create(TEntityDto input)
+        {
+            var model = ObjectMapper.Map(input, Activator.CreateInstance<TEntity>());
+            return ObjectMapper.Map(Repository.Insert(model), input);
+        }
+
+        public TEntityDto Update(TEntityDto input)
+        {
+            var model = ObjectMapper.Map(input, Activator.CreateInstance<TEntity>());
+            return ObjectMapper.Map(Repository.Update(model), input);
+        }
+
+        public void Delete(EntityDto<long> input)
+        {
+            Delete(input.Id);
         }
 
         /// <summary>
         ///     Implementação de filtros genérica. Utiliza a implementação particular do método <see cref="ApplyExtraFilter" />>
         ///     pelo serviço que implementa uma entidade.
         /// </summary>
-        /// <typeparam name="T"></typeparam>
         /// <param name="filtro"></param>
-        /// <param name="input"></param>
         /// <returns></returns>
-        public PagedResultDto<TEntityDto> GetAndFilter<T>(T filtro, PagedAndSortedResultRequestDto input)
-            where T : TFilter
+        public PagedResultDto<TEntityDto> GetAndFilter(TFilter filtro)
         {
-            return CreatePagedResult(Filter(filtro), input);
+            var filteredQuery = ApplyFilter(filtro);
+            return ApplyPagination(filteredQuery, filtro.PageAndSort);
         }
 
-        public PagedResultDto<TEntityDto> CreatePagedResult(IQueryable<THerdaEntidadeBase> set,
-            PagedAndSortedResultRequestDto input)
+        public void Delete(long input)
+        {
+            Repository.Delete(input);
+        }
+
+        public PagedResultDto<TEntityDto> ApplyPagination(IQueryable<IEntidadeBase>      set,
+                                                          PagedAndSortedResultRequestDto input)
         {
             var result = set.PageBy(input).ToList();
 
             var secondResult = result.AsQueryable().Select(x =>
-                ObjectMapper.Map(x, Activator.CreateInstance<TEntityDto>())).ToList();
+                                                               ObjectMapper
+                                                                   .Map(x, Activator.CreateInstance<TEntityDto>()))
+                                     .ToList();
 
             return new PagedResultDto<TEntityDto>
-            {
-                TotalCount = DynamicQueryableExtensions.Count(set),
-                Items = secondResult
-            };
+                   {
+                       TotalCount = DynamicQueryableExtensions.Count(set),
+                       Items      = secondResult
+                   };
         }
     }
 }

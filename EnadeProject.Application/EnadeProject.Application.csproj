@@ -199,11 +199,11 @@
     <Compile Include="EnadeProjectAppServiceBase.cs" />
     <Compile Include="Interfaces\IServiceSimple.cs" />
     <Compile Include="Interfaces\IService.cs" />
-    <Compile Include="Model\BaseEntityDto.cs" />
+    <Compile Include="Model\EntityDto.cs" />
     <Compile Include="Model\Filter\BaseFilter\BaseStaticFilter.cs" />
     <Compile Include="Model\Filter\BaseFilter\BaseDynamicFilter.cs" />
     <Compile Include="Model\Filter\Support\Criterio.cs" />
-    <Compile Include="Model\Filter\FiltroEstaticoPergunta.cs" />
+    <Compile Include="Model\Filter\PerguntaFilter.cs" />
     <Compile Include="Interfaces\IFilter.cs" />
     <Compile Include="Model\Filter\Support\IndividualFilter.cs" />
     <Compile Include="Model\PerguntaDto.cs" />

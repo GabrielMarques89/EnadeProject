@@ -3,7 +3,7 @@ using EnadeProject.Model.Filter.BaseFilter;
 
 namespace EnadeProject.Model.Filter
 {
-    public class FiltroEstaticoPergunta : BaseStaticFilter, IFilter
+    public class PerguntaFilter : BaseStaticFilter, IFilter
     {
         /// <summary>
         /// Exemplo de campo de filtro customizado.

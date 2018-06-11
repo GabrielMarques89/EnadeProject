@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using Abp.Domain.Entities.Auditing;
 using EnadeProject.NHibernate.EntityMappings.FrameWork_Entities.Interfaces;
 
 namespace EnadeProject.NHibernate.EntityMappings.FrameWork_Entities
@@ -10,13 +9,12 @@ namespace EnadeProject.NHibernate.EntityMappings.FrameWork_Entities
     ///     Entity é a entidade base do APB. Herda de IEntity(Tipo). Usando herança do Entity, há uma criação default de
     ///     repositório para as classes que corretamente implementam a interface.
     /// </summary>
-    /// <typeparam name="TKeyType"></typeparam>
-    public abstract class Entity<TKeyType> : IEntidadeBase<TKeyType>, IFullAudited
+    public abstract class Entity : IEntidadeBase
     {
         /// <summary>
         ///     O framework se encarrega de definir o equals baseado em Id
         /// </summary>
-        public virtual TKeyType Id { get; set; }
+        public virtual long Id { get; set; }
         /// <summary>
         ///     <para>Método default que as classes devem implementar para validação de regras gerais.</para>
         ///     <para>Validação baseada nos [Data Annotations] da classe.</para>

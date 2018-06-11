@@ -13,9 +13,9 @@ namespace EnadeProject
         {
             IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
             Configuration.Modules.AbpWebApi().IsValidationEnabledForControllers = false;
-            Configuration.Modules.AbpWebApi().DynamicApiControllerBuilder
-                .ForAll<IApplicationService>(typeof(EnadeProjectApplicationModule).Assembly, "app")
-                .Build();
+            //Configuration.Modules.AbpWebApi().DynamicApiControllerBuilder
+            //    .ForAll<IApplicationService>(typeof(EnadeProjectApplicationModule).Assembly, "app")
+            //    .Build();
         }
     }
 }

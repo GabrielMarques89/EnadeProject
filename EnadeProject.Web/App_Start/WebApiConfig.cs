@@ -10,6 +10,7 @@ namespace EnadeProject.Web
         public static void Register(HttpConfiguration config)
         {
             config.MapHttpAttributeRoutes();
+
             config.Formatters.XmlFormatter.SupportedMediaTypes.Clear();
             config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("text/html"));
             config.Formatters.JsonFormatter.SerializerSettings.ContractResolver =

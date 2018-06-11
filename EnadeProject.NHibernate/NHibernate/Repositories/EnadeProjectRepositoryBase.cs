@@ -1,7 +1,6 @@
 ﻿using Abp.Domain.Entities;
 using Abp.NHibernate;
 using Abp.NHibernate.Repositories;
-using AutoMapper;
 
 namespace EnadeProject.NHibernate.Repositories
 {
