@@ -10,8 +10,8 @@ using IEntityDto = EnadeProject.Model.IEntityDto;
 
 namespace EnadeProject.Controllers.BaseControllers
 {
-    public class BaseCrudApiController<T,TDto,TFilter, TService> : BaseRestController
-        where TService : EnadeProjectAppServiceBase<T, TDto, TFilter> 
+    public abstract class BaseCrudApiController<T, TDto, TFilter, TService> : BaseRestController
+        where TService : EnadeProjectAppServiceBase<T, TDto, TFilter>
         where T : EntidadeBase
         where TDto : IEntityDto
         where TFilter : IFilter
@@ -23,29 +23,29 @@ namespace EnadeProject.Controllers.BaseControllers
             Service = service;
         }
 
-        protected virtual HttpResponseMessage FiltrarPaginarOrdernar(TFilter request)
+        protected virtual HttpResponseMessage InnerFiltrarPaginarOrdernar(TFilter request)
         {
             var result = Service.GetAndFilter(request);
             return ResponseWrapper(result);
         }
 
-        protected virtual HttpResponseMessage Salvar(TDto model)
+        protected virtual HttpResponseMessage InnerSalvar(TDto model)
         {
             return ResponseWrapper(Service.Create(model));
         }
 
-        protected virtual HttpResponseMessage Atualizar(TDto model)
+        protected virtual HttpResponseMessage InnerAtualizar(TDto model)
         {
             return ResponseWrapper(Service.Create(model));
         }
 
-        protected virtual HttpResponseMessage Remover(long id)
+        protected virtual HttpResponseMessage InnerRemover(long id)
         {
             Service.Delete(new EntityDto<long>(id));
             return Success();
         }
 
-        protected virtual HttpResponseMessage BuscarPorId(long id)
+        protected virtual HttpResponseMessage InnerBuscarPorId(long id)
         {
             return ResponseWrapper(Service.Get(id));
         }

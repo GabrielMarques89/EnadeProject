@@ -93,6 +93,7 @@
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="NHibernate, Version=5.1.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4" />
     <Reference Include="Nito.AsyncEx, Version=4.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Nito.AsyncEx.4.0.1\lib\net45\Nito.AsyncEx.dll</HintPath>
       <Private>True</Private>
@@ -202,10 +203,12 @@
     <Compile Include="Model\EntityDto.cs" />
     <Compile Include="Model\Filter\BaseFilter\BaseStaticFilter.cs" />
     <Compile Include="Model\Filter\BaseFilter\BaseDynamicFilter.cs" />
+    <Compile Include="Model\Filter\RespostaFilter.cs" />
     <Compile Include="Model\Filter\Support\Criterio.cs" />
     <Compile Include="Model\Filter\PerguntaFilter.cs" />
     <Compile Include="Interfaces\IFilter.cs" />
     <Compile Include="Model\Filter\Support\IndividualFilter.cs" />
+    <Compile Include="Model\RoundDto.cs" />
     <Compile Include="Model\PerguntaDto.cs" />
     <Compile Include="Model\RespostaDto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

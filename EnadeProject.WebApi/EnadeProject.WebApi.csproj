@@ -232,6 +232,7 @@
     <Compile Include="Controllers\BaseControllers\BaseRestController.cs" />
     <Compile Include="Controllers\PerguntaApiController.cs" />
     <Compile Include="Controllers\Interface\IEntityRestController.cs" />
+    <Compile Include="Controllers\RoundController.cs" />
     <Compile Include="Controllers\RespostaController.cs" />
     <Compile Include="EnadeProjectWebApiModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

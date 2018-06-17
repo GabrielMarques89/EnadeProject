@@ -9,10 +9,10 @@ namespace EnadeProject.NHibernate.Repositories
     /// </summary>
     /// <typeparam name="TEntity">Entity type</typeparam>
     /// <typeparam name="TPrimaryKey">Type of the primary key</typeparam>
-    public abstract class EnadeProjectRepositoryBase<TEntity, TPrimaryKey> : NhRepositoryBase<TEntity, TPrimaryKey>
+    public class EnadeProjectRepositoryBase<TEntity, TPrimaryKey> : NhRepositoryBase<TEntity, TPrimaryKey>
         where TEntity : class, IEntity<TPrimaryKey>
     {
-        protected EnadeProjectRepositoryBase(ISessionProvider sessionProvider) : base(sessionProvider){}
+        public EnadeProjectRepositoryBase(ISessionProvider sessionProvider) : base(sessionProvider){}
 
         //add common methods for all repositories
     }

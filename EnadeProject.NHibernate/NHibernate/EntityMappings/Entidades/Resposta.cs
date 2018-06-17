@@ -1,6 +1,9 @@
 ﻿#region Imports
 
 using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using Abp.Domain.Repositories;
 using EnadeProject.NHibernate.EntityMappings.FrameWork_Entities;
 
 #endregion

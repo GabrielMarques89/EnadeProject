@@ -1,7 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using Abp.Runtime.Validation;
 using EnadeProject.NHibernate.EntityMappings.FrameWork_Entities.Interfaces;
+using FluentNHibernate.Conventions;
+using FluentNHibernate.Visitors;
 
 namespace EnadeProject.NHibernate.EntityMappings.FrameWork_Entities
 {
@@ -25,8 +29,12 @@ namespace EnadeProject.NHibernate.EntityMappings.FrameWork_Entities
             var context = new ValidationContext(this, null, null);
             var results = new List<ValidationResult>();
 
-            Validator.TryValidateObject(this, context, results, true);
+            Validator.TryValidateObject(this,context,results,true);
 
+            if (results.Count > 0)
+            {
+                throw new AbpValidationException("Erro de validação.", results);
+            }
             return results;
         }
 

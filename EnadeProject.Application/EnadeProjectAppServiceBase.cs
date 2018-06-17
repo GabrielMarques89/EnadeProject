@@ -1,12 +1,15 @@
 ﻿#region Região de Imports
 
 using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Linq.Dynamic.Core;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
 using Abp.Domain.Repositories;
 using Abp.Linq.Extensions;
+using Abp.NHibernate;
 using Abp.ObjectMapping;
 using EnadeProject.Common.Helpers;
 using EnadeProject.Interfaces;
@@ -36,13 +39,16 @@ namespace EnadeProject
         // ReSharper disable once NotAccessedField.Local
         private readonly   IObjectMapper              _objectMapper;
         protected readonly IRepository<TEntity, long> Repository;
+        protected List<ValidationResult> ErrosValidacaoLogicaNegocio { get;set; } = new List<ValidationResult>();
+        protected ISessionProvider CurrentSession { get; set; }
 
         protected EnadeProjectAppServiceBase(IRepository<TEntity, long> repository,
-                                             IObjectMapper              objectMapper)
+                                             IObjectMapper              objectMapper,ISessionProvider session)
         {
             Repository             = repository;
             _objectMapper          = objectMapper;
             LocalizationSourceName = EnadeProjectConsts.LocalizationSourceName;
+            CurrentSession = session;
         }
 
         // ReSharper disable once NotAccessedField.Local -- Classe base não usa diretamente
@@ -54,6 +60,8 @@ namespace EnadeProject
         {
             return Get(input.Id);
         }
+
+        public abstract void ValidateLogicBusiness(TEntityDto model);
 
         public PagedResultDto<TEntityDto> GetAll(PagedAndSortedResultRequestDto input)
         {
@@ -78,7 +86,7 @@ namespace EnadeProject
         {
             var set = Repository.GetAll();
             if (filtro.Set.Count >= 1)
-                foreach (var filter in filtro.Set)
+                foreach (var filter in filtro.Set.Where(x=> x.Campo != null && x.Campo.Trim() != ""))
                 {
                     var property       = typeof(TEntity).GetProperties().Single(x => x.Name == filter.Campo);
                     var convertedValue = Convert.ChangeType(filter.Value, property.PropertyType);
@@ -95,14 +103,20 @@ namespace EnadeProject
 
         public TEntityDto Create(TEntityDto input)
         {
-            var model = ObjectMapper.Map(input, Activator.CreateInstance<TEntity>());
-            return ObjectMapper.Map(Repository.Insert(model), input);
+            ValidateLogicBusiness(input);
+            return SaveOrUpdate(input, Repository.Insert );
         }
 
         public TEntityDto Update(TEntityDto input)
         {
+            return SaveOrUpdate(input, Repository.Update );
+        }
+
+        public TEntityDto SaveOrUpdate(TEntityDto input,Func<TEntity,TEntity> saveOrUpdateMethod)
+        {
             var model = ObjectMapper.Map(input, Activator.CreateInstance<TEntity>());
-            return ObjectMapper.Map(Repository.Update(model), input);
+            model.Validate();
+            return ObjectMapper.Map(saveOrUpdateMethod(model), input);
         }
 
         public void Delete(EntityDto<long> input)
