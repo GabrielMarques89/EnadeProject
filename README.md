@@ -9,7 +9,7 @@ O objetivo desse projeto é desenvolver uma plataforma fácilmente adaptável, q
 
 * Visual Studio 2017 (C# 7.0)
 
-* IIS (.net framework 4.5.2)
+* IIS (.net framework 4.6.1)
 
 * Servidor My Sql
 
